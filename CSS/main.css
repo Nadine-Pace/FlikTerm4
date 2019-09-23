@@ -1,0 +1,47 @@
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+
+    /* general styling and stripping*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1, h3, h5, p  {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
