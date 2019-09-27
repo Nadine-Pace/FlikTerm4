@@ -1,2 +1,66 @@
-lols
-haha
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+
+/* hover states: note that colour might vary = 
+        background-color: #00b0a6; >>
+        cursor: pointer;
+        transition: all ease 500ms;
+
+/*  h1 = main headings ONLY
+    h6 = buttons ONLY 
+    p = change to fit your page
+
+/* buttons = copy shape and size from main.css
+
+
+    /* general styling and stripping*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
