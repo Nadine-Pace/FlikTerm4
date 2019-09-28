@@ -65,6 +65,25 @@ h6 {
     letter-spacing: 1px;
 }
 
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h3 {   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
 
 
     /* navigation bar & spacer */
@@ -127,15 +146,73 @@ h6 {
 
 
 
+    /*hero slider*/
+.hero-slider {
+    background-color: black;
+    width: 100%;
+    height: 700px;
+}
 
 
-/* home- main content*/
+
+
+
+    /* home- main content*/
 
 .home-content {
-    width: 100%;
-    height: 500px;
+    width: 92%;
+    height: 2000px;
     background-color: #072446;
-    margin-top: 50px;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 5%;
+}
+
+
+
+
+    /*movie row*/
+.movie-row h1 { 
+    float: left;
+}
+
+.movie-row h5 {
+    float: right;
+    margin-top: 11px;
+    opacity: 0.5;
+}
+
+.movie-row h5:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
+.row-title {
+    height: 90px
+}
+
+
+    /*single-movie*/
+.single-movie {
+    background-color: aqua;
+    width: 23%;
+    height: 550px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 70px;
+
+    float: left;
+}
+
+.movie-poster {
+    background-color: crimson;
+    width: 100%;
+    height: 450px;
+}
+
+.single-movie h3 {
+    margin-top: 10px;
 }
 
 
@@ -143,8 +220,7 @@ h6 {
 
 
 
-
-/*buttons section - home */
+    /*buttons section - home */
 
 .home-buttons {
     width: 100%;
