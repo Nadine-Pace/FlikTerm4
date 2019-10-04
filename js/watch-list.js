@@ -9,10 +9,12 @@ $(function(){
     }
     
     
-    $(".remove-item").on("click", function(){$(this).closest(".filmbox").fadeOut(800);
+    $(".remove-item").on("click", function(){$(this).closest(".filmbox").fadeOut(600);
     });
     
-    $(".remove").on("click", function(){$(".filmbox").fadeOut(800);
+    $(".remove").on("click", function(){$(".filmbox").fadeOut(600);
     });
-
+    
+    
+    
 });
