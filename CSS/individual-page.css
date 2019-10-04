@@ -220,11 +220,16 @@ h5 {
 .indv-bottom-row {
     width: 100%;
     color: white;
+    height: auto;
 }
 
 .indv-bottom-row p {
     opacity: 0.6;
     font-size: 14px;
+}
+
+.individual-text {
+    width: 75%;
 }
 
 .description-block {
@@ -243,21 +248,26 @@ h5 {
     /* watchlist button */
 
 .add-btn-row {
-    height: 70px;;
-    margin-top: 7%;
+    width: 20%;
+    height: auto;
 }
 
 .watchlist-button {
-    float: left;
-    margin-left: 40%;
-    width: 280px;
-    height: 30px;
+    margin-left: 400%;
+    margin-top: -75%;
+    margin-right: 5%;
+    width: 150px;
+    height: 150px;
     
     padding-top: 5px;
     
     background-color: #e8c73d;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 150px;
+}
+
+.watchlist-button h6 {
+    margin-top: 30%;
 }
 
 .watchlist-button:hover {
