@@ -8,5 +8,13 @@ $(function(){
         console.log(filmData);
     }
 
+    //active-stage
+        $(".grid-item").click (function() {
+            $(".single-movie-active").not(this).hide();
+
+            $(this).next(".single-movie-active").stop().toggle(1000);
+        });
+        
+    
 
 });
