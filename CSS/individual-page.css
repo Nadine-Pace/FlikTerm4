@@ -141,11 +141,7 @@ h5 {
     /* main body */
 .individual-page-container {
     background-color: #072446;
-    width: 84%;
     height: auto;
-    
-    padding-left: 8%;
-    padding-right: 8%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -155,7 +151,6 @@ h5 {
     /* top-row - headings and rating*/
 
 .indv-top-row {
-    text-align: center;
     width: 100%;
     height: 110px;
     
@@ -195,7 +190,6 @@ h5 {
 }
 
 .details-block {
-    margin-top: 3%;
     float: right;
     width: 22%;
 
