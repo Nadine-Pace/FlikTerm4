@@ -7,6 +7,14 @@ $(function(){
     function filmCallBack(filmData){
         console.log(filmData);
     }
-
-
+    
+    
+    $(".remove-item").on("click", function(){$(this).closest(".filmbox").fadeOut(600);
+    });
+    
+    $(".remove").on("click", function(){$(".filmbox").fadeOut(600);
+    });
+    
+    
+    
 });
