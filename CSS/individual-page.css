@@ -94,11 +94,12 @@ h5 {
 }
 
 .navigation-container {
-    width: 280px;
-    margin-top: 20px;
+    width: auto;
+    margin-top:1.6%;
     float: left;
-    margin-left: 30px;
+    margin-left: 2%;
 }
+
 
 .navigation-container li {
     opacity: 0.6;
