@@ -103,10 +103,10 @@ h3 {
 }
 
 .navigation-container {
-    width: 280px;
-    margin-top: 20px;
+    width: auto;
+    margin-top:1.6%;
     float: left;
-    margin-left: 30px;
+    margin-left: 2%;
 }
 
 .navigation-container li {
@@ -117,20 +117,10 @@ h3 {
     opacity: 1;
 }
 
-.watchlist-nav-button {
-    float: left;
-    color: white;
-    font-size: 14px;
-    opacity: 0.6;
-    margin-top: 36px;
-    margin-left: 760px;
-}
-
 .user-icon {
-    width: 130px;
-    height: 100px;
+    width: 8%;
     float: right;
-    margin-top: 8px;
+    margin-top: 0.5%;
 }
 
 .active {
@@ -291,7 +281,7 @@ h3 {
     float: right;
     
     margin-top: 22%;
-    margin-right: -3%;
+    margin-right: 4%;
 }
 
 .indicator {
