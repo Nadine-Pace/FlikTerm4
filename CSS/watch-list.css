@@ -280,6 +280,7 @@ h6 {
 
 .textbox h6:hover {
     cursor: pointer;
+    font-weight: 700;
 }
 
 
