@@ -223,7 +223,116 @@ h6 {
 .grid-item:hover{
     cursor: pointer;
 }
+.single-movie-active {
+    background-color: white;
+    z-index: 1%;
+    position: inherit;
+    width: 137%;
+    height: 455px;
+    margin-right: 1%;
+    margin-left: -75%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+    display: none;
+}
+.single-movie-active:active {
+    background-color: white;
+    z-index: 1%;
+    position: inherit;
+    width: 137%;
+    height: 455px;
+    margin-right: 1%;
+    margin-left: -75%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+}
+.active-details {
+    width: 40%;
+    height: 89%;
+    float: right;
+    padding-left: 6%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.active-details:active {
+    width: 40%;
+    height: 89%;
+    float: right;
+    padding-left: 6%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
 
+.active-details h3{
+    color: black;
+    width: 100%;
+}
+
+.active-details h5{
+    color: black; 
+    width: 100%;
+    margin-top: 9.5%;
+}
+
+.active-details p {
+    font-size: 12px;
+    width: 100%;
+}
+
+.active-details h6 {
+    font-size: 12px;
+}
+
+.active-watchlist-button {
+    background-color: #e8c73d;
+    width: 90%;
+    margin-top: 15%;
+    height: 35px;
+    
+    padding-top: 15px; 
+    
+    text-align: center;
+    border-radius: 8px;
+}
+.active-watchlist-button:active {
+    background-color: #e8c73d;
+    width: 90%;
+    margin-top: 15%;
+    height: 35px;
+    
+    padding-top: 15px; 
+    
+    text-align: center;
+    border-radius: 8px;
+}
+
+.active-watchlist-button:hover {
+    cursor: pointer;
+    transition: all ease 500ms;
+    background-color: crimson;
+}
+
+.active-details-button {
+    background-color: #033967;
+    width: 90%;
+    margin-top: 3%;
+    height: 35px;
+    
+    padding-top: 15px;
+    
+    text-align: center;
+    border-radius: 8px;
+}
+
+.active-details-button:hover {
+    cursor: pointer;
+    transition: all ease 500ms;
+    background-color: crimson;
+}
 
 
     /* footer */
