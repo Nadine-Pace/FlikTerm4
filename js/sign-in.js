@@ -1,4 +1,9 @@
 $(document).ready(function(){
+ $(".header-1").height($(window).height());
+ 
+})
+
+$(document).ready(function(){
     $(".sign-up-page").hide(1000);
       $(".sign-in-page").hide(1000);
     });
