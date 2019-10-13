@@ -121,6 +121,253 @@ h3 {
 
 
 
+    /*hero-slider*/
+.hero-slider {
+    margin-bottom: 2%;
+}
+
+.slide-one {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+    background-image: url(../img/HeaderSlides/GOTG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.slide-two {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+    background-image: url(../img/HeaderSlides/LionKing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.slide-three {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+    background-image: url(../img/HeaderSlides/TheMeg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.slide-four {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+    background-image: url(../img/HeaderSlides/Joker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.slide-year {
+    font-size: 23px;
+}
+
+.left-side-text {
+    float: left;
+    margin-top: 14%;
+    width: 25%;
+    
+    margin-left: 10%;
+}
+
+.slide-title {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.slide-director {
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.slide-genre {
+    float: left;
+    font-size: 11px;
+    margin-bottom: 5%;
+}
+
+.genre-dot {
+    background-color: white;
+    width: 7px; 
+    height: 7px;
+    float: left;
+    margin-top: 0.8%;
+    border-radius: 50px;
+    
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+
+.slider-details-btn {
+    background-color: #033967;
+    width: 70%;
+    margin-top: 20%;
+    height: 35px;
+    
+    padding-top: 2%; 
+    
+    text-align: center;
+    border-radius: 8px;
+}
+
+.slider-details-btn:hover {
+    cursor: pointer;
+    transition: all ease 500ms;
+    background-color: crimson;
+}
+
+.watch-trailer-btn {
+    background-color: #e8c73d;
+    width: 70%;
+    margin-top: 3%;
+    height: 35px;
+    
+    padding-top: 2%;
+    
+    text-align: center;
+    border-radius: 8px;
+}
+
+.watch-trailer-btn:hover {
+    cursor: pointer;
+    transition: all ease 500ms;
+    background-color: crimson;
+}
+
+
+
+
+    /*slide-indicators*/
+
+.slide-indicator-container {
+    width: 20px;
+    height: 20%;
+    
+    float: right;
+    
+    margin-top: 22%;
+    margin-right: 4%;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100%;
+    
+    margin-top: 80%;
+    opacity: 0.5;
+}
+
+.indicator:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
+.slide-active {
+    opacity: 1;
+}
+
+
+
+
+    /* bottom bar - hero slider */
+
+.bottom-bar {
+    width: 100%;
+    height: 9%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-bar-info {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    float: left;
+}
+
+.slider-watchlist-btn {
+    width: 19.97%;
+    height: 100%;
+    background-color: #e8c73d; 
+    float: left;
+}
+
+.slider-watchlist-btn:hover {
+    cursor: pointer;
+    transition: all ease 500ms;
+    background-color: crimson;
+}
+
+.slider-watchlist-btn h6 {
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+.slider-rating-heading {
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.star-rating i {
+    float: left;
+    margin-left: 0.7%;
+    color: white;
+    margin-top: 2.2%;
+}
+
+.slider-rating {
+    float: left;
+    margin-top: 2.2%;
+    margin-left: 2.5%;
+    
+    font-size: 12px;
+}
+
+.slider-time {
+    float: right;
+    margin-right: 2%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.glyphicon-time {
+    margin-right: 8px;
+}
+
+
+
+
     /* movie-card */
 .splash-info {
     color: white;
@@ -139,9 +386,19 @@ h3 {
     width: 100%;
 }
 
+.show-genre {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 10px;
+    
+    color: white;
+    opacity: 0.6;
+    margin-bottom: 2%;
+}
+
+
 .movie-time {
-    margin-top: 14px;
-    float: right;
+    float: left;
 }
 
 .movie-time img {
@@ -157,15 +414,6 @@ h3 {
     font-size: 13px;
 }
 
-.show-genre {
-    width: 100%;
-    letter-spacing: 1px;
-    font-size: 10px;
-    
-    color: white;
-    opacity: 0.6;
-    margin-bottom: 5%;
-}
 
 .mobile-btn {
     width: 48%;
