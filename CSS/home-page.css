@@ -1,0 +1,192 @@
+  /* general styling and stripping*/
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+    margin: 2%;
+    font-size: 35px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+div {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px; 
+}
+
+h3 {   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
+
+
+
+.spacer {
+    margin: 2%;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+}
+
+    /*horizontal-scroller*/
+
+.horizontal-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.horizontal-scroller .row {
+    display: block;
+}
+
+.horizontal-scroller .movie-card {
+    display: inline-block;
+    float: none
+}
+
+
+
+
+    /* movie-card */
+.splash-info {
+    color: white;
+}
+
+.movie-poster {
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.splash-row-one {
+    width: 100%;
+}
+
+.movie-time {
+    margin-top: 14px;
+    float: right;
+}
+
+.movie-time img {
+    width: 15px;
+    float: right;
+    
+    margin-right: 5px;
+}
+
+.show-time {
+    float: right;
+    color: white;
+    font-size: 13px;
+}
+
+.show-genre {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 10px;
+    
+    color: white;
+    opacity: 0.6;
+    margin-bottom: 5%;
+}
+
+.mobile-btn {
+    width: 48%;
+    background-color: crimson;
+    height: auto;
+    
+    margin-bottom: 5%;
+    border-radius: 5%;
+    margin-right: 2%;
+    
+    padding: 2%;
+    
+    float: left;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+

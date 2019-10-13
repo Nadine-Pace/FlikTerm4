@@ -5,7 +5,7 @@
     <meta name="assessment" content="Semester Four Project">
     <meta name="subject" content="IDV100">
     <meta name="lecturer" content ="Mike Maynard">
-    <meta nane="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- website-title -->
     <title>Flik - Semester Four Project</title>
@@ -13,6 +13,7 @@
     <!--bootstrap links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
         
     <!-- jQuery library files -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         
     <!-- CSS-file-links -->
-    <link rel="stylesheet" href="../CSS/individual-page.css">
+    <link rel="stylesheet" href="../CSS/home-page.css">
     
     <!--j-query links-->
     <script src="../js/individual-page.js"></script>
@@ -30,48 +31,50 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #072446;">
         
-        <header>
-            <nav class="navbar navbar-expand-md" style="background-color: crimson">
-                <a class="navbar-brand" href="#" style="margin-top: 1%;">
-                    <img src="../img/Logo&SocialMedia/HeaderLogo.svg" alt="Logo" style="width:85px;">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="row" style="background-color: #072446;">
+            <h1 style="margin-left: 2%">RECOMMENDED FLIKS</h1>
+            <div class="spacer"></div>
+        </div>
+        
+        
+    <div class="horizontal-scroller">   
+        <div class="row movie-row flex-nowrap" style="background-color:  #072446;">
             
-                <ul class="navbar-nav" style="margin-left: 5%;">
-                    <li class="nav-item active"><a href="index.html">HOME</a></li>
-                    <li class="nav-item active"><a href="pages/library.html">LIBRARY</a></li>
-                    <li class="nav-item active"><a href="pages/watch-list.html">YOUR WATCHLIST</a></li>
-                </ul> <!--nav bar-->
+            <div class="movie-card col-7 col-lg-2" style="background-color:  #072446;">
+                <div class="movie-poster"></div>
                 
+                <div class="splash-info">
+                    <div class="splash-row-one">
+                        <h3>Placeholder Title</h3>
+                        <div class="movie-time d-none d-lg-block">
+                            <p class="show-time">Time</p>
+                            <img src="img/UI/Clock.svg">
+                        </div> <!--movie-time-->
+                    </div> <!--splash-row-one-->
+                    <p class="show-genre">GENRE GOES HERE</p>
+                </div><!--splash-info-->
                 
-
-            </nav> <!--navigation--->
-        </header> <!--header-->
+                <a href="watch-list.html"><div class="mobile-btn watchlist-btn">ADD TO<br> WATCHLIST</div></a>
+                
+                <a href="individual-page.html"><div class="mobile-btn details-btn">MORE<br>DETAILS</div></a>
+            </div> <!--movie-card-->
+            
+            
+        </div> <!--row movie-row-->
+    </div>  
+        
+        <div class="row" style="background-color: #072446;">
+            <h1 style="margin-left: 2%; margin-top: 7%;">RECOMMENDED FLIKS</h1>
+            <div class="spacer"></div>
+        </div>
         
 
         
-        <div class="navigation-container">
-            <ul  class="nav-buttons">
-                <li class="active"><a href="index.html">HOME</a></li>
-                <li><a href="pages/library.html">LIBRARY</a></li>
-                <li><a href="pages/watch-list.html">YOUR WATCHLIST</a></li>
-            </ul> <!--nav-buttons-->
-        </div> <!--navigation-container-->
-        
-        <div class="user-icon">
-            <img src="img/UserIcons/UserOne.svg">
-        </div> <!--user-icon-->
         
     
-    
-    
-    
-    </div><!--bs main container-->
+    </div><!--bs main container-fluid-->
 
 
 </body>
