@@ -38,6 +38,8 @@ $(function(){
     
     
     
+    
+    
     //api call
     
      var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
