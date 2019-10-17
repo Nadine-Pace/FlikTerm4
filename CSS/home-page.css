@@ -16,6 +16,7 @@ h1 {
 body {
     margin: 0;
     padding: 0;
+    background-color: #072446;
 }
 
 a {
@@ -94,12 +95,46 @@ h3 {
 
 
 
-.spacer {
-    margin: 2%;
-    width: 60%;
-    height: 2px;
-    background-color: white;
+
+
+
+
+    /* navigation bar & spacer */
+
+.navigation-bar {
+    background-color: #072446!important;
+    font-size: 1.2em;
+    height: auto;
+    width: 100%;
+    padding: 0; 
+    margin: 0;
 }
+
+.header-logo{
+    float: left;
+    padding: 0px 15px 5px;
+    color: #fff;
+    font-size: 30pt;
+    font-family:'Pacifico', cursive;
+    
+    padding-top: 1%;
+    }
+
+    
+#navbarContent p{
+        font-family: 'Montserrat', sans-serif;
+        padding: 0% 6%;
+    }
+
+.header-spacer {
+    background-color: crimson;
+    min-height: 1vh;
+    height: auto;
+}
+
+
+
+
 
     /*horizontal-scroller*/
 
