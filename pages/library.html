@@ -10,12 +10,12 @@
     <!-- website-title -->
     <title>Flik - Semester Four Project</title>
     
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <!--bootstrap links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        
-    <!-- jQuery library files -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   
          
     <!-- font imports -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,600,900" rel="stylesheet">
@@ -25,33 +25,46 @@
     <link rel="stylesheet" href="../CSS/library.css">
     
     <!--j-query links-->
-    <script src="../js/library.js"></script>
+    <script src="../js/home.js"></script>
 
 </head>
 
 
 <body>
  <!--header and spacer - leave this alone!!-->   
-    <div class="header-container">
-        <div class="header-logo">
-            <img src="../img/Logo&SocialMedia/HeaderLogo.svg">
-        </div><!--header-logo-->
-        
-        <div class="navigation-container">
-            <ul  class="nav-buttons">
-                <li><a href="../index.html">HOME</a></li>
-                <li class="active"><a href="pages/library.html">LIBRARY</a></li>
-                <li><a href="watch-list.html">YOUR WATCHLIST</a></li>
-            </ul> <!--nav-buttons-->
-        </div> <!--navigation-container-->
-        
-        <div class="user-icon">
-            <img src="../img/UserIcons/UserOne.svg">
-        </div> <!--user-icon-->
-        
-    </div><!--header-container-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+    <a class="navbar-brand" href="#"><h1>Flik</h1></a>
     
-    <div class="header-spacer"></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><p>HOME</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>LIBRARY</p></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>WATCHLIST</p></a>
+        </li>
+      </ul>
+      
+    </div>
+    
+    
+    
+  </nav>
+  <div class="header-underline container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="line"></div>
+          </div>
+        </div> 
+      </div>
     
     
     
