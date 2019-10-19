@@ -1,19 +1,12 @@
 body, html{
     background-color: black !important;
     color:white !important;
+
 }
 
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
-}
-
-.container-1{
-    background-image: url(../img/Headers/2MdY.gif);
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-     background-position: center;
 }
 
 a {
@@ -27,13 +20,6 @@ a:active {
     color: inherit;
 }
 
-li {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-right: 50px;
-    font-size: 14px;
-}
 
 h1 {
     margin: 0;
@@ -77,59 +63,65 @@ h3{
     padding-top: 20px;
 }
 
-.col-1{
-    margin-top: 100px;
+.top-spacer{
+    height: 100px;
+    background-color: aqua;
+}
+
+.top-spacer-2{
+    height: 20px;
+    background-color: aqua;
+}
+
+.image-0{
+    width: 200px;
+    height: 200px;
+}
+
+.container-1{
+    background-image: url(../img/Headers/2MdY.gif);
     background-size: cover;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     max-width: 100vh;
 }
 
-.col-2{
-    margin-top: 1px;
-    text-align: center;
-}
-
-.col-3{
-    margin-top: 60px;
-    text-align: center;
+.sign-in{
+    width: 540px;
+    height: 740px;
+    background-color: #072446;
+   opacity: 0.9;
+   padding-top: 50px;
 }
 
 #image-1{
     text-align: center;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 100%;
     background-image: url(../img/UserIcons/samuser1.png);
     background-position: center;
     background-size:cover;
     overflow: hidden;
 }
 
-.col-4{
-    margin-top: 60px;
-    text-align: center; 
-    margin-left: 180px;
-}
-
 #image-2{
     text-align: center;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 100%;
     background-image: url(../img/UserIcons/jackuser1.png);
     background-position: center;
     background-size:cover;
     overflow: hidden;
 }
 
-.col-5{
-    margin-top: 60px;
-    text-align: center;
-}
-
 #image-3{
     text-align: center;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url(../img/UserIcons/bobuser1.png);
     background-position: center;
     background-size:cover;
@@ -137,9 +129,9 @@ h3{
 }
 
 .overlay{
-    width:100px;
     background-color: RGBA(0,0,0,0.6);
-    height: 100px;
+     width: 80%;
+    height: 80%;
     opacity: 0;
     transition: ease 300ms;
     border-radius: 100%;
@@ -153,58 +145,33 @@ h3{
     opacity: 1;
 }
 
-.col-6{
-   margin-top: 60px;
-    text-align: center;
-}
-
 #image-4{
     text-align: center;
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
+     width: 150px;
+    height: 100%;
     background-image: url(../img/UserIcons/newuser1.png);
     background-position: center;
     background-size:cover;
     overflow: hidden;
+    margin-left: 45%;
 }
 
+.container-fluid{
+    max-width: 100%;
+}
 
-.col-7{
-   margin-top: 60px;
-    text-align: center;
+.row{
+    width: 100%;
 }
 
 .container-2{
-     background-image: url(../img/Headers/PAA.gif);
+    background-image: url(../img/Headers/PAA.gif);
     background-size: cover;
-    height: 875px;
-    background-repeat:no-repeat;
-    width: 100%;
-     background-position: center;
-}
-
-
-.sign-in{
-    width: 540px;
-    height: 570px;
-    background-color: #072446;
-   opacity: 0.9;
-}
-
-.col-8{
-   margin-top: 60px;
-    text-align: center;
-}
-
-.col-9{
-   margin-top: 50px;
-    text-align: center;
-}
-
-.text-1{
-    padding-top: 100px;
-    text-align: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
 }
 
 .text-line-1 {
@@ -238,11 +205,11 @@ h3{
 
 .container-3{
      background-image: url(../img/Headers/PAA.gif);
-    background-size: cover;
-    height: 875px;
-    background-repeat:no-repeat;
-    width: 100%;
+     background-size: cover;
+     height: 100vh;
+     background-repeat: no-repeat;
      background-position: center;
+     max-width: 100%;
 }
 
 #sign-up-btn{
