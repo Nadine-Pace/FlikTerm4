@@ -65,17 +65,14 @@ h3{
 
 .top-spacer{
     height: 100px;
-    background-color: aqua;
 }
 
 .top-spacer-2{
     height: 20px;
-    background-color: aqua;
 }
 
 .image-0{
-    width: 200px;
-    height: 200px;
+    width: 400px;
 }
 
 .container-1{
@@ -95,11 +92,12 @@ h3{
    padding-top: 50px;
 }
 
+
 #image-1{
     text-align: center;
     border-radius: 100%;
     width: 150px;
-    height: 100%;
+    height: 150px;
     background-image: url(../img/UserIcons/samuser1.png);
     background-position: center;
     background-size:cover;
@@ -130,8 +128,8 @@ h3{
 
 .overlay{
     background-color: RGBA(0,0,0,0.6);
-     width: 80%;
-    height: 80%;
+     width: 100%;
+    height: 100%;
     opacity: 0;
     transition: ease 300ms;
     border-radius: 100%;
@@ -149,12 +147,11 @@ h3{
     text-align: center;
     border-radius: 100%;
      width: 150px;
-    height: 100%;
+    height: 150px;
     background-image: url(../img/UserIcons/newuser1.png);
     background-position: center;
     background-size:cover;
     overflow: hidden;
-    margin-left: 45%;
 }
 
 .container-fluid{
@@ -173,6 +170,8 @@ h3{
     background-position: center;
     max-width: 100%;
 }
+
+
 
 .text-line-1 {
     background-color: transparent;
