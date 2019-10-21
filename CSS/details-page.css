@@ -1,0 +1,158 @@
+  /* general styling and stripping*/
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+    margin: 2%;
+    font-size: 35px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #072446;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+div {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px; 
+    text-decoration: none;
+}
+
+h3 {   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
+
+
+
+
+
+    /*title row */
+
+
+
+
+title-row{
+    text-align: center;
+    color: white;
+    margin-top: 5vh;
+}
+
+.title {
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+    /*poster & details */
+
+.cool-row {
+    background-image: url(../img/Headers/2MdY.gif);
+    
+    background-size: cover;
+    border-style: none;
+}
+
+.movie-poster {
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+    
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.movie-details {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.heading {
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.info {
+
+    font-weight: 500;
+}

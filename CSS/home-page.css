@@ -53,6 +53,7 @@ p {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    text-decoration: none;
 }
 
 h6 {
@@ -81,6 +82,7 @@ div {
     font-size: 13px;
     color: white;
     letter-spacing: 1px; 
+    text-decoration: none;
 }
 
 h3 {   
@@ -155,9 +157,10 @@ h3 {
 
 
     /*tablet slider*/
-.tablet-slider img {
-    width: 100%;
-    margin-bottom: 2%;
+.tablet-image {
+    background-size: cover;
+    
+    background-image: url(../img/HeaderSlides/Joker.jpg);
 }
 
 
@@ -276,7 +279,7 @@ h3 {
     padding-top: 2%; 
     
     text-align: center;
-    border-radius: 8px;
+    border-radius: 50px;
 }
 
 .slider-details-btn:hover {
@@ -294,7 +297,7 @@ h3 {
     padding-top: 2%;
     
     text-align: center;
-    border-radius: 8px;
+    border-radius: 50px;;
 }
 
 .watch-trailer-btn:hover {
@@ -429,7 +432,7 @@ h3 {
 }
 
 .recommended-row {
-    min-height: 40vh;
+    min-height: 47vh;
 }
 
 .see-less {
@@ -548,6 +551,7 @@ h3 {
     transform: rotateY(180deg);
     background-color: rgba(255,255,255,0.3);
     padding: 5%;
+    height: auto;
 }
 
 .flip-card-back p {
@@ -602,6 +606,66 @@ h3 {
     transition: all ease 500ms;
     background-color: crimson;
 }
+
+
+
+
+
+
+    /*extra buttons*/
+.buttons-row {
+    height: 5vh;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+    /* footer */
+
+.footer-spacer {
+    height: 2vh;
+    background-color: crimson;
+}
+
+.footer-row {
+    height: auto;
+}
+
+.footer-logo img{
+    max-height: 10vh;
+    margin-top: 3vh;
+}
+
+.footer-blurb {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.thats-it {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.footer-copyright{
+    opacity: 0.4;
+}
+
+.social-media img {
+    max-height: 5vh;
+    float: left;
+    display: block;
+}
+
+.social-media {
+    background-color: aqua;
+}
+
+
 
 
 
