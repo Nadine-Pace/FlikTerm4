@@ -83,46 +83,52 @@ h6 {
     float: left;
 }
 
-.navigation-container {
-    width: auto;
-    margin-top:1.6%;
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 1% 0;
+    background-color:#072446;
+    font-size: 1.2em;
+    border: 0;
+    height: auto;
+}
+.navbar-brand{
     float: left;
-    margin-left: 2%;
+    padding: 0px 15px 5px;
+    color: #fff;
+}
+.navbar-brand h1{
+    font-size: 30pt;
+    font-family:'Pacifico', cursive;
 }
 
-
-.navigation-container li {
-    opacity: 0.6;
+#navbarContent p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0% 6%;
 }
+.bg-dark{
+    background-color: #072446!important;
+}    
 
-.navigation-container li:hover {
-    opacity: 1;
-}
 
-.watchlist-nav-button {
+.user-img{
     float: left;
-    color: white;
-    font-size: 14px;
-    opacity: 0.6;
-    margin-top: 36px;
-    margin-left: 760px;
+    width: 8%;
+    height: 40px;
+    display: none;
+}
+.user-img img{
+    margin: -15% 0%;
 }
 
-.user-icon {
-    width: 130px;
-    height: 100px;
-    float: right;
-    margin-top: 8px;
-}
-
-.active {
-    opacity: 1 !important;
-}
-
-.header-spacer {
-    width: 100%;
-    height: 15px;
+.row .line{
     background-color: #00b0a6;
+    height: 15px;
+    width: 100%;
+    border: none;
+}
+.col-lg-12{
+    padding: 0;
 }
 
     /* content container */

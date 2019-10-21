@@ -30,6 +30,23 @@ $(function(){
     
     
     
+    //see more button - on click
+    
+    $(".see-less").hide();
+    
+    $(".see-more").click(function() {
+        $(".see-more").hide();
+        $(".see-less").show();
+        $(".recommended-row").animate({height: '80vh'}, 500);
+    });
+    
+    $(".see-less").click(function() {
+        $(".see-less").hide();
+        $(".see-more").show();
+        $(".recommended-row").animate({height: '40vh'}, 500);
+    });
+    
+    
     
     
     

@@ -1,0 +1,235 @@
+body, html{
+    background-color: black !important;
+    color:white !important;
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.top-spacer{
+    height: 100px;
+    background-color: aqua;
+}
+
+.top-spacer-2{
+    height: 20px;
+    background-color: aqua;
+}
+
+.image-0{
+    width: 200px;
+    height: 200px;
+}
+
+.container-1{
+    background-image: url(../img/Headers/2MdY.gif);
+    background-size: cover;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     max-width: 100vh;
+}
+
+.sign-in{
+    width: 540px;
+    height: 740px;
+    background-color: #072446;
+   opacity: 0.9;
+   padding-top: 50px;
+}
+
+#image-1{
+    text-align: center;
+    border-radius: 100%;
+    width: 150px;
+    height: 100%;
+    background-image: url(../img/UserIcons/samuser1.png);
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+#image-2{
+    text-align: center;
+    border-radius: 100%;
+    width: 150px;
+    height: 100%;
+    background-image: url(../img/UserIcons/jackuser1.png);
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+#image-3{
+    text-align: center;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/UserIcons/bobuser1.png);
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+.overlay{
+    background-color: RGBA(0,0,0,0.6);
+     width: 80%;
+    height: 80%;
+    opacity: 0;
+    transition: ease 300ms;
+    border-radius: 100%;
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+.overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+#image-4{
+    text-align: center;
+    border-radius: 100%;
+     width: 150px;
+    height: 100%;
+    background-image: url(../img/UserIcons/newuser1.png);
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+    margin-left: 45%;
+}
+
+.container-fluid{
+    max-width: 100%;
+}
+
+.row{
+    width: 100%;
+}
+
+.container-2{
+    background-image: url(../img/Headers/PAA.gif);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+}
+
+.text-line-1 {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sign-in-btn{
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #013A67;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+
+#sign-in-btn:hover {
+    opacity:1;
+    background-color: crimson;
+}
+
+.container-3{
+     background-image: url(../img/Headers/PAA.gif);
+     background-size: cover;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     max-width: 100%;
+}
+
+#sign-up-btn{
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #013A67;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+
+#sign-up-btn:hover {
+    opacity:1;
+    background-color: crimson;
+}
+
+.sign-up{
+    width: 540px;
+    height: 700px;
+    background-color: #072446;
+   opacity: 0.9;
+}
