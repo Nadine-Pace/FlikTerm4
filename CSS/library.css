@@ -213,87 +213,6 @@ h6 {
     margin-top: -4%;
 }
 
-.grid-container{
-    display: grid;
-    grid-gap: 165px 45px;
-    grid-template-columns: 18% 18% 18% 18%;
-    grid-template-rows: 460px 460px 460px;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 150px;
-}
-
-.grid-item {
-    background-position: center;
-    background-size: cover;
-}
-.grid-item:hover{
-    cursor: pointer;
-}
-.single-movie-active {
-    background-color: white;
-    z-index: 1%;
-    position: inherit;
-    width: 137%;
-    height: 455px;
-    margin-right: 1%;
-    margin-left: -75%;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    float: left;
-    display: none;
-}
-.single-movie-active:active {
-    background-color: white;
-    z-index: 1%;
-    position: inherit;
-    width: 137%;
-    height: 455px;
-    margin-right: 1%;
-    margin-left: -75%;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    float: left;
-}
-.active-details {
-    width: 40%;
-    height: 89%;
-    float: right;
-    padding-left: 6%;
-    padding-right: 3%;
-    padding-top: 5%;
-    padding-bottom: 3%;
-}
-.active-details:active {
-    width: 40%;
-    height: 89%;
-    float: right;
-    padding-left: 6%;
-    padding-right: 3%;
-    padding-top: 5%;
-    padding-bottom: 3%;
-}
-
-.active-details h3{
-    color: black;
-    width: 100%;
-}
-
-.active-details h5{
-    color: black; 
-    width: 100%;
-    margin-top: 9.5%;
-}
-
-.active-details p {
-    font-size: 12px;
-    width: 100%;
-}
-
-.active-details h6 {
-    font-size: 12px;
-}
-
 .active-watchlist-button {
     background-color: #e8c73d;
     width: 90%;
@@ -310,9 +229,7 @@ h6 {
     width: 90%;
     margin-top: 15%;
     height: 35px;
-    
     padding-top: 15px; 
-    
     text-align: center;
     border-radius: 8px;
 }
@@ -340,9 +257,7 @@ h6 {
     transition: all ease 500ms;
     background-color: crimson;
 }
-
-
-    /* footer */
+/* footer */
 
 .footer-spacer {
     width: 100%;
@@ -448,5 +363,17 @@ h6 {
     font-family: 'Montserrat';
     color: #ffffff;
     font-size: 15px;
+}
+.library-filter-movies{
+    width:70px;
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.library-filter-movies p{
+    color: white;
+}
+.library-filter-movies h3{
+    color: white;
 }
 
