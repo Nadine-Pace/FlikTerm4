@@ -1,35 +1,83 @@
 $(function(){
-
-    var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
-
-    $.getJSON (apiCall, filmCallBack);
-
-    function filmCallBack(filmData){
-        console.log(filmData);
-    }
     
+  var apiRequest = new XMLHttpRequest();  
     
-    $(".remove-item").on("click", function(){$(this).closest(".filmbox").fadeOut(600);
-    });
+  apiRequest.open('GET','http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6', true);
     
-    $(".remove").on("click", function(){$(".filmbox").fadeOut(600);
-    });
+  apiRequest.send();
     
-    
-    function createContainers (img_src, movieName, runTime, director, releaseDate){
-        
-        $().append("<div class='filmboxleft'><img src=" + img_src "><h3 id='movie-title'></h3><h5 id='runtime'>Run Time:</h5><h5 id='director'>Director:</h5><h5 id='release-date'>Release Date:</h5><div class="button">WATCH NOW</div><div class="remove-item"><h6>REMOVE FROM WATCHLIST</h6></div>
-            </div>
-        
-     
-            
-                        
-
-        )
-        
-        
-    }
-    
+  apiRequest.onload = function (){
+      var data = JSON.parse(this.response);
+      
+      function createContainers (img_src, title, runTime, director, released){
+         $(".filmbox").append("<div class='filmbox col-xs-12 col-md-6 col-lg-4'><div class='picturebox'<img src=" + img_src "></div><h3 id='movie-title'> " + title + "</h3><h5 id='runtime'>Run Time: " + runTime + "</h5><h5 id='director'>Director: " + director + "</h5><h5 id='release-date'>Release Date: " + release + "</h5><div class="button">WATCH NOW</div><div class="removeitem"><h6>REMOVE FROM WATCHLIST</h6></div></div>");
+         }
+      
+      for( i=0; i < data.photos.length; i++){
+          
+        runTime = data[i].runtime;
+        title = data[i].title;
+        director= data[i].director;
+        released= data[i].released;
+          
+          createContainers (img_src, movieName, runTime, director, releaseDate);
+      }
+      
+      $(".filmbox").on("click", function(){
+          
+          var storageReference = +$(this).find()
+          
+      });
+  }
     
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
