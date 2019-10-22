@@ -117,10 +117,6 @@ title-row{
 
 
 
-
-
-
-
     /*poster & details */
 
 .cool-row {
@@ -144,6 +140,27 @@ title-row{
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    height: 300px;
+    width: 10%;
+    margin-left: -120px;
+}
+
+.ratings {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 300px;
+}
+
+.ratings-box {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 100px;
+    width: 100%;
+    margin-top: -8px;
 }
 
 .heading {
@@ -155,4 +172,8 @@ title-row{
 .info {
 
     font-weight: 500;
+}
+
+.ratings h2 {
+    font-size: 20px;
 }
