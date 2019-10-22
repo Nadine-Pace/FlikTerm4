@@ -22,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         
     <!-- CSS-file-links -->
-    <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/home-page.css">
     
     <!--j-query links-->
     <script src="../js/home.js"></script>
+    <script src="../js/apiRequest.js"></script>
 
 </head>
 
@@ -61,13 +61,22 @@
                 </div>
                 
             </nav>
-        
-        
+                
         <div class="row header-spacer">
             <div class="col-lg-12">
                 <h3 class="welcome-message"></h3>
             </div>
         </div> <!-- header-spacer-->
+        
+        
+        
+<!--home-tablet slider-->
+        
+        <div class="row d-none d-md-block d-lg-none">
+            <div class="tablet-image">
+                <img src="../img/HeaderSlides/Joker.jpg" style="max-width: 100%;">
+            </div>
+        </div>
         
         
 <!--hero slider pages -->
@@ -321,7 +330,7 @@
 
                     <a href="watch-list.html"><div class="mobile-btn watchlist-btn d-lg-none">ADD TO<br> WATCHLIST</div></a>
 
-                    <a href="individual-page.html"><div class="mobile-btn details-btn d-lg-none">MORE<br>DETAILS</div></a>
+                    <a href="details-page.html"><div class="mobile-btn details-btn d-lg-none">MORE<br>DETAILS</div></a>
                 </div> <!--movie-card-->
 
 

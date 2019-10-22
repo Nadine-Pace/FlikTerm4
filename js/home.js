@@ -57,13 +57,13 @@ $(function(){
     
     //api call
     
-     var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
+     //var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
 
-    $.getJSON(apiCall, filmCallBack);
+    //$.getJSON(apiCall, filmCallBack);
 
-    function filmCallBack(filmData){
-        console.log(filmData);
-    }
+    //function filmCallBack(filmData){
+        //console.log(filmData);
+    //}
 
 });
 

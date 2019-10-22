@@ -114,7 +114,7 @@ h3 {
 
 .header-logo{
     float: left;
-    padding: 0px 15px 5px;
+    padding-left: 2%;
     color: #fff;
     font-size: 30pt;
     font-family:'Pacifico', cursive;
@@ -133,6 +133,17 @@ h3 {
     min-height: 1vh;
     height: auto;
 }
+
+.tablet-image {
+    margin-bottom: 1vh;
+}
+
+.nav-item {
+    text-align: right;
+    margin-right: -5%;
+}
+
+
 
 
 
@@ -616,6 +627,7 @@ h3 {
 .buttons-row {
     height: 5vh;
     background-color: aqua;
+    margin-top:15vh;
 }
 
 
