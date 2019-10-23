@@ -468,8 +468,8 @@ h3 {
 
 .movie-poster {
     background-color: white;
-    width: 200px;
-    height: 300px;
+    width: auto;
+    height: 400px;
     
     margin-top: 6%;
     margin-bottom: 5%;
@@ -497,9 +497,10 @@ h3 {
 
 .movie-time img {
     width: 15px;
-    float: right;
-    
-    margin-right: 5px;
+    float: left;
+    margin-right: 97px;
+    margin-left: 49%;
+    margin-top: -11%;
 }
 
 .show-time {
