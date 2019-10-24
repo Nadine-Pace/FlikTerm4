@@ -340,35 +340,54 @@ label:hover :checked + .card {
 
 
 
-/* footer */
-.divider-footer{
-    background-color: #00b0a6;
-    width: 100%;
-    height: 30px;
+
+
+    /* footer */
+
+.footer-spacer {
+    height: 2vh;
+    background-color: crimson;
 }
-footer{
-    background: #033967;
-    color:white;
+
+.footer-row {
+    height: auto;
 }
-.flik{
+
+.footer-logo img{
+    max-height: 10vh;
+    margin-top: 3vh;
+}
+
+.footer-blurb {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.thats-it {
     font-family: 'Pacifico', cursive;
+    font-size: 25px;
 }
-.thats-all{
-    font-family: 'Pacifico', cursive;
+
+.footer-copyright{
+    opacity: 0.4;
 }
-.socials-icon img{
-    margin: 5% 7;
+
+.social-media img {
+    max-height: 5vh;
+    float: left;
+    display: block;
+    opacity: 0.4;
 }
-.library-filter-movies{
-    width:70px;
-    height: 70px;
-    margin: 0 auto;
-    overflow: hidden;
+
+.social-media img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
 }
-.library-filter-movies p{
-    color: white;
+
+.social-media {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
-.library-filter-movies h3{
-    color: white;
-}
+
 

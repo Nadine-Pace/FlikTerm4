@@ -287,6 +287,57 @@ watchlist-btn {
 
 
 
+    /* footer */
+
+.footer-spacer {
+    height: 2vh;
+    background-color: crimson;
+}
+
+.footer-row {
+    height: auto;
+}
+
+.footer-logo img{
+    max-height: 10vh;
+    margin-top: 3vh;
+}
+
+.footer-blurb {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.thats-it {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.footer-copyright{
+    opacity: 0.4;
+}
+
+.social-media img {
+    max-height: 5vh;
+    float: left;
+    display: block;
+    opacity: 0.4;
+}
+
+.social-media img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
+.social-media {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+   
+
+
+
 
 
 
