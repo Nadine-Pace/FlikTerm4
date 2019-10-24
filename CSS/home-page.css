@@ -94,7 +94,9 @@ h3 {
     color: white;
 }
 
-
+.library-heading h1{
+    font-size: 49pt;
+}
 
 
 
@@ -103,47 +105,58 @@ h3 {
 
     /* navigation bar & spacer */
 
-.navigation-bar {
-    background-color: #072446!important;
-    font-size: 1.2em;
-    height: auto;
-    width: 100%;
-    padding: 0; 
-    margin: 0;
-}
-
-.header-logo{
-    float: left;
-    padding-left: 2%;
-    color: #fff;
-    font-size: 30pt;
-    font-family:'Pacifico', cursive;
-    
-    padding-top: 1%;
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 1% 0;
+        background-color:#072446;
+        font-size: 1.2em;
+        border: 0;
+        height: auto;
     }
-
+    .navbar-brand{
+        float: left;
+        padding: 0px 15px 5px;
+        color: #fff;
+    }
+    .navbar-brand h1{
+        font-size: 30pt;
+        font-family:'Pacifico', cursive;
+    }
     
-#navbarContent p{
+    #navbarContent p{
         font-family: 'Montserrat', sans-serif;
         padding: 0% 6%;
     }
+    .bg-dark{
+        background-color: #072446!important;
+    }    
+    
+    
+    .user-img{
+        float: left;
+        width: 8%;
+        height: 40px;
+        display: none;
+    }
+    .user-img img{
+        margin: -15% 0%;
+    }
+    
+    .row .line{
+        background-color: #00b0a6;
+        height: 15px;
+        width: 100%;
+        border: none;
+    }
+    .col-lg-12{
+        padding: 0;
+    }
+    .container-fluid {
+        padding-right: 0!important;
+        padding-left: 0!important;
 
-.header-spacer {
-    background-color: crimson;
-    min-height: 1vh;
-    height: auto;
-}
-
-.tablet-image {
-    margin-bottom: 1vh;
-}
-
-.nav-item {
-    text-align: right;
-    margin-right: -5%;
-}
-
-
+    }
 
 
 

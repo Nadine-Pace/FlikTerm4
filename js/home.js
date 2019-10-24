@@ -63,6 +63,8 @@ $(function(){
             var filmRuntime = FirstMan.Runtime;
             var filmDirector = FirstMan.Director;
             var filmRelease = FirstMan.Released;
+            var filmDescription = FirstMan.Plot;
+            var filmYear = FirstMan.Year;
             
             $(".splashTitle").text(filmName);
             $(".backTitle").text(filmName);
@@ -72,7 +74,9 @@ $(function(){
             $(".backTime").text(filmRuntime);
             $(".backDirector").text(filmDirector);
             $(".backRelease").text(filmRelease);
-            $(".movie-poster").attr('src', filmPoster)
+            // $(".movie-poster").attr('src', filmPoster)
+            $(".backDescription").text(filmDescription);
+            $(".backYear").text(filmYear);
         }
     
         filmCallBack();

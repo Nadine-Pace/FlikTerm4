@@ -28,6 +28,7 @@
 
     <!--j-query links-->
     <script src="../js/home.js"></script>
+
     <script src="../js/apiRequest.js"></script>
 
 </head>
@@ -85,19 +86,22 @@
 
     <div class="content-container">
 
+        <div class="row">
         <div class="library-heading">
             <h1>OUR LIBRARY</h1>
             <div class="heading-underline"></div>
         </div>
+    </div>
         <!--library-heading-->
 
+        <divb class="row">
         <div class="filter-by">
             <p>Filter by...</p>
         </div>
+    
         <!--filter-by-->
 
         <div class="library-filter-movies row col-xs-3">
-            <img src="moviePoster" />
             <h3 id="movieTitle">
                 <span></span>
             </h3>
@@ -115,5 +119,54 @@
             </p>
         </div>
 
+        <div class="row container-fluid" id="library-container" style="margin: 20% 0%;">
+        
+
+                <div class="col-lg-3 col-md-2 col-xs-2">
+                    <label>
+                        <input type="checkbox"  />
+                        <div class="card">
+                            <div class="front"><img src="https://m.media-amazon.com/images/M/MV5BMDBhOTMxN2UtYjllYS00NWNiLWE1MzAtZjg3NmExODliMDQ0XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg"></div>
+                            <div class="back"> 
+                                <h3 class="backTitle" style="padding: 5% 0%;">Title</h3>
+                                <h6 class="backYear">Year</h6>
+                                <p class="backDescription" style="width: 85%; text-align: center; margin: 24% auto;"></p>
+                        </div>
+                    </label>
+                    </div>
+    </div>
+</div>
+</div>
+    
+    
+
 
 </body>
+<div class=" row divider-footer container-fluid"></div>
+<footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about">
+              <h2 class="flik">Flik</h2>
+             
+              <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="thats-all">That's All Folks</h4>
+                
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <div class="socials">
+                  <img src="../img/Logo&SocialMedia/Facebook.svg" style="height: 42px; width: auto;" class="socials-icon">
+                  <img src="../img/Logo&SocialMedia/Twitter.svg" style="height: 42px; width: auto;"  class="socials-icon">
+                  <img src="../img/Logo&SocialMedia/Instagram.svg" style="height: 42px; width: auto;"  class="socials-icon">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+    </footer>
