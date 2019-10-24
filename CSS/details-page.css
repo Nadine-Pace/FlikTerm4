@@ -149,9 +149,6 @@ h3 {
 
     /*title row */
 
-
-
-
 title-row{
     text-align: center;
     color: white;
@@ -162,6 +159,9 @@ title-row{
     text-align: center;
     
 }
+
+
+
 
 
 
@@ -245,6 +245,8 @@ title-row{
     margin-bottom: 50px;
     background-color: rgba(255,255,255,0.3);
 }
+
+
 
 
 
@@ -334,7 +336,32 @@ watchlist-btn {
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
-   
+
+
+
+
+
+
+
+    /*watchlist button*/
+
+.watchlist-btn-details {
+    border-color: crimson;
+    border-style: solid;
+    border-radius: 100px;
+    
+    padding: 10%;
+    
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.watchlist-btn-details:hover {
+    background-color: crimson;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
 
 
 

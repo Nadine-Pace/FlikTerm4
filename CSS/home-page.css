@@ -83,6 +83,8 @@ div {
     color: white;
     letter-spacing: 1px; 
     text-decoration: none;
+    
+    
 }
 
 h3 {   
@@ -635,7 +637,37 @@ h3 {
 
     /*extra buttons*/
 
+.library-btn-home {
+    border-color: crimson;
+    border-style: solid;
+    border-radius: 100px;
+    
+    padding: 10%;
+    
+    margin-bottom: 5vh;
+}
 
+.watchlist-btn-home {
+    border-color: crimson;
+    border-style: solid;
+    border-radius: 100px;
+    
+    padding: 10%;
+    
+    margin-bottom: 5vh;
+}
+
+.library-btn-home:hover {
+    background-color: crimson;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
+.watchlist-btn-home:hover {
+    background-color: crimson;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
 
 
 
