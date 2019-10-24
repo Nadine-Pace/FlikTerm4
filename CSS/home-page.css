@@ -634,11 +634,7 @@ h3 {
 
 
     /*extra buttons*/
-.buttons-row {
-    height: 5vh;
-    background-color: aqua;
-    margin-top: 15vh;
-}
+
 
 
 
@@ -681,11 +677,20 @@ h3 {
     max-height: 5vh;
     float: left;
     display: block;
+    opacity: 0.4;
+}
+
+.social-media img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
 }
 
 .social-media {
-    background-color: aqua;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
+
 
 
 
