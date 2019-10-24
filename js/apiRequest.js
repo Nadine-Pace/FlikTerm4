@@ -3,109 +3,43 @@ $(function(){
     var recommendedMovies = [
         "SpiderMan",
         "Mike",
-        "Nadine"
+        "Nadine", 
+        "norman"
     ];
     
     
-    flikPoster = "Hello"
-    flikTitle = "Hello"
-    flikGenre = "Hello"
-    flikTime = "Hello"
-    flikDirector = "Hello"
-    flikDate = "Hello"
     
-    // For Loop to run through above array 
     
-    //for(i = 0; i < recommendedMovies.length; i++){
-        //console.log(recommendedMovies[i]);
+    
+    for(i = 0; i < recommendedMovies.length; i++){
+    
+        var movieTitle = recommendedMovies[i];
         
-        //$(".recommended-row").append(
-            //"<div class='flip-card col-lg-2' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'>" + flikPoster + "</div><div class='splash-info'><div class='splash-row-one'><h3>" + flikTitle + "</h3></div><p class='show-genre'>" + flikGenre + "</p><div class='movie-time d-none d-lg-block'><p class='show-time'>" + flikTime + "</p><img src='../img/UI/Clock.svg'></div></div></div></div><div class='flip-card-back'><h2>" + flikTitle + "</h2><p>RUNTIME:</p><h5>" + flikTime + "</h5><p>DIRECTOR:</p><h5>" + flikDirector + "</h><p>RELEASE DATE:</p><h5>" + flikDate + "</h5><p>GENRE</p><h5>" + flikGenre + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>"
-        
-       // );
+    
+        var apiCall = new XMLHttpRequest('http://www.omdbapi.com/?t=' + movieTitle +'&apikey=d90cffd6');
         
         
-   // }
+          
+      
+            console.log(apiCall)
+
+               $(".recommended-row").append(
+             "<div class='col-lg-2 d-block'><div class='flip-card' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'></div><div class='splash-info'><div class='splash-row-one'><h3 class='splashTitle'>" + movieTitle + "</h3></div> <!--splash-row-one--><p class='splashGenre'>GENRE GOES HERE</p><div class='movie-time'><img src='../img/UI/Clock.svg'><p class='splashTime'>Time</p></div></div><!--splash-info--></div> <!--movie-card--></div> <!--flip-card--front--><div class='flip-card-back'><h2 class='backTitle'>Title</h2><p>RUNTIME:</p><h5 class='backTime'>time</h5><p>DIRECTOR:</p><h5 class='backDirector'>some dude</h5><p>RELEASE DATE:</p><h5 class='backRelease'>yo mama</h5><p>GENRE</p><h5 class='backGenre'>good, actually</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><!--flip-watchlist--><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a> <!--flip-detals--></div> <!--flip-card-back--></div> <!--flip-card-inner--></div><!--flip-card--></div>"
+       );
+            
+           
+            
     
-    
-    
-    
-    
-    
-    
-    
-    
-    console.log(recommendedMovies);
+        
+        
+     
+        // Set up variables that take from the object in the API
+        
+        
+     
+        
+        
+   }
     
 
-    
-    
-    
-    
-    
-    
-    var apiRequest = new XMLHttpRequest();
-    
-    apiRequest.open("http://www.omdbapi.com/?apikey=3b5ca08c&t=");
-    
-    apiRequest.send();
-    
-    apiRequest.onload = function() {
-        
-        var data = JSON.parse(this.response);
-        
-        function createContainers(flikPoster, flikTitle, flikGenre, flikTime, flikDirector, flikDate) {
-            //single movie flip-card
-            
-            $(".flip-card").append(
-                "<div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'>" + flikPoster + "</div><div class='splash-info'><div class='splash-row-one'><h3>" + flikTitle + "</h3></div><p class='show-genre'>" + flikGenre + "</p><div class='movie-time d-none d-lg-block'><p class='show-time'>" + flikTime + "</p><img src='../img/UI/Clock.svg'></div></div></div></div><div class='flip-card-back'><h2>" + flikTitle + "</h2><p>RUNTIME:</p><h5>" + flikTime + "</h5><p>DIRECTOR:</p><h5>" + flikDirector + "</h><p>RELEASE DATE:</p><h5>" + flikDate + "</h5><p>GENRE</p><h5>" + flikGenre + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div>"
-            );
-            
-        }; //createContainers
-        
-        
-        for(i = 0; i < data.photos.length; i++){
-            
-            
-        }
-        
-        
-        
-        
-        
-        
-    } //api onload function
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    //var moviePoster = localStorage.getItem("moviePoster");
-    //var movieTitle = localStorage.getItem("movieTitle");
-    //var movieDirector = localStorage.getItem("movieDirector");
-    //var movieGenre = localStorage.getItem("movieGenre");
-    //var movieRuntime = localStorage.getItem("movieRuntime");
-    //var movieReleaseDate = localStorage.getItem("movieReleaseDate");
-
-    //$("#moviePoster").attr('src', moviePoster);
-    //$("#movieTitle").attr(movieTitle);
-    //$("#movieDirector").attr(movieDirector);
-    //$("#movieGenre").attr(movieGenre);
-    //$("#movieRuntime").attr(movieRuntime);
-    //$("#movieReleaseDate").attr(movieReleaseDate);
 });
