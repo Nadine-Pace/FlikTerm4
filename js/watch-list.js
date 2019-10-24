@@ -25,7 +25,8 @@ $(function(){
       
       $(".filmbox").on("click", function(){
           
-          var storageReference = +$(this).find()
+          var storageReference = +$(this).find().text();
+          console.log(storageReference);
           
       });
   }
