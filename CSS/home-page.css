@@ -532,7 +532,7 @@ h3 {
     /*hover state for movie card */
 
 .flip-card {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.3);
     height: auto;
     perspective: 1000px;
 }
@@ -627,7 +627,7 @@ h3 {
 .buttons-row {
     height: 5vh;
     background-color: aqua;
-    margin-top:15vh;
+    margin-top: 15vh;
 }
 
 
