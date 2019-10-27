@@ -111,7 +111,6 @@ h6 {
     background-color: #072446!important;
 }    
 
-
 .user-img{
     float: left;
     width: 8%;
@@ -131,6 +130,7 @@ h6 {
 .col-lg-12{
     padding: 0;
 }
+
 @media (min-width: 576px) {
     .card{
         margin: 26% 52%;
@@ -143,14 +143,15 @@ h6 {
     }
 }
 
-
     /* content container */
 .content-container{
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-color: #072446; 
 }
-
+.col-lg-3 .col-md-4 .col-xs-4{
+    height: auto;
+}
 .library-heading{
     padding: 100px;
 }
@@ -272,24 +273,13 @@ h6 {
 }
 
 label {
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    display: block;
-    width: 300px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 60%;
     cursor: pointer;
 }
 
 .card {
     position: relative;
-    height: 90%;
+    height: 500px;
     width: 100%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -298,10 +288,18 @@ label {
     z-index: 20;
 }
 
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .front {
+    width: 100%;
+    height: 100%;
+}
+
 .card div {
     position: absolute;
-    height: 100%;
-    width: 100%;
     background: #FFF;
     text-align: center;
     line-height: 200px;
@@ -338,7 +336,11 @@ label:hover :checked + .card {
     box-shadow: 0 20px 20px rgba(255,255,255,.2);
 }
 
-
+.thumbnail{
+    background-color: #e8c73d;
+    height: 100%;
+    width: 20%;
+}
 
 
 
