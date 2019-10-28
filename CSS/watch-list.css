@@ -54,6 +54,7 @@ h3 {
     font-weight: 500;
     font-size: 21px;
     color: black;
+    padding-top: 10px;
 }
 
 h5 {
@@ -85,7 +86,8 @@ h6 {
 
 .textbox h6 {
     margin: 0;
-    padding-left: 134px;
+    padding-left: 70px;
+    padding-top: 15px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
     font-size: 10px;
@@ -96,55 +98,59 @@ h6 {
 
     /* navigation bar & spacer */
 
-.header-container {
-    background-color: #072446;
-    width: 100%;
-    height: 90px;
-}
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 1% 0;
+        background-color:#072446;
+        font-size: 1.2em;
+        border: 0;
+        height: auto;
+    }
+    .navbar-brand{
+        float: left;
+        padding: 0px 15px 5px;
+        color: #fff;
+    }
+    .navbar-brand h1{
+        font-size: 30pt;
+        font-family:'Pacifico', cursive;
+    }
+    
+    #navbarContent p{
+        font-family: 'Montserrat', sans-serif;
+        padding: 0% 6%;
+    }
+    .bg-dark{
+        background-color: #072446!important;
+    }    
+    
+    
+    .user-img{
+        float: left;
+        width: 8%;
+        height: 40px;
+        display: none;
+    }
+    .user-img img{
+        margin: -15% 0%;
+    }
+    
+    .row .line{
+        background-color: #00b0a6;
+        height: 15px;
+        width: 100%;
+        border: none;
+    }
+    .col-lg-12{
+        padding: 0;
+    }
+    .container-fluid {
+        padding-right: 0!important;
+        padding-left: 0!important;
 
-.header-logo {
-    width: 120px;
-    height: 100px;
-    margin-top: 15px;
-    margin-left: 20px;
-    float: left;
-}
+    }
 
-.navigation-container {
-    width: auto;
-    margin-top:1.6%;
-    float: left;
-    margin-left: 2%;
-}
-
-
-.navigation-container li {
-    opacity: 0.6;
-}
-
-.navigation-container li:hover {
-    opacity: 1;
-}
-
-.watchlist-nav-button {
-    float: left;
-    color: white;
-    font-size: 14px;
-    opacity: 0.6;
-    margin-top: 36px;
-    margin-left: 760px;
-}
-
-.user-icon {
-    width: 130px;
-    height: 100px;
-    float: right;
-    margin-top: 8px;
-}
-
-.active {
-    opacity: 1 !important;
-}
 
 .header-spacer {
     width: 100%;
@@ -172,34 +178,19 @@ h6 {
     background-color: white;
 }
 
-.leftside {
-    float: left;
-    height: 70%;
-    width: 50%;
+
+
+.filmbox {
+    width: 500px;
+    height: 300px;
+    padding-top: 50px;
+    margin-left: 5.5%;
 }
 
-.rightside {
-    float: right;
-    height: 70%;
-    width: 50%;
-}
-
-.filmboxright {
-    width: 100%;
-    height: 310px;
-    margin-left: -80px;
-}
-
-.filmboxleft {
-    width: 100%;
-    height: 310px;
-}
 
 .picturebox {
-    height: 80%;
-    width:25%;
-    margin-left: 13%;
-    margin-top: 8%;
+    height: 300px;
+    width:200px;
     float: left;
     background-color: yellow;
 }
@@ -210,44 +201,20 @@ h6 {
 }
 
 .textbox {
-    height: 80%;
-    width:60%;
+    height: 300px;
+    width:300px;
     float: right;
-    margin-right: 2%;
-    margin-top: 8%;
     background-color: white;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
   }
 
-.pictureboxright {
-    height: 80%;
-    width:25%;
-    margin-left: 2%;
-    margin-top: 8%;
-    float: left;
-    background-color: yellow;
-}
-
-.textboxright {
-    height: 80%;
-    width:60%;
-    float: right;
-    margin-right: 13%;
-    margin-top: 8%;
-    background-color: white;
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 7px;
-  }
 
 .browse-more-button {
-    float: left;
-    margin-left: 600px;
-    width: 280px;
+    width: 30%;
     height: 30px;
-    
     margin-top: 140px;
-    
+    margin-left: 35%;
     background-color: #055d6b;
     text-align: center;
     border-radius: 5px;
@@ -271,6 +238,7 @@ h6 {
     text-align: center;
     border-radius: 8px;
     margin-left: 30%;
+    margin-top: 70px;
 }
 
 .button:hover {
@@ -279,9 +247,30 @@ h6 {
     background-color: crimson;
 }
 
+.watchlistparagraph {
+    height: 100px;
+    width: 80%;
+    margin-left: 5.5%;
+    margin-top: 60px;
+
+}
+
+.watchlistparagraph p {
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    word-spacing: 1px;
+
+}
+
 .textbox h6:hover {
     cursor: pointer;
     font-weight: 700;
+}
+
+.hheadings {
+    padding-top: 20px;
 }
 
 
@@ -391,4 +380,57 @@ h6 {
     font-family: 'Montserrat';
     color: #ffffff;
     font-size: 15px;
+}
+
+
+
+
+
+
+    /* footer */
+
+.footer-spacer {
+    height: 2vh;
+    background-color: crimson;
+}
+
+.footer-row {
+    height: auto;
+}
+
+.footer-logo img{
+    max-height: 10vh;
+    margin-top: 3vh;
+}
+
+.footer-blurb {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.thats-it {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.footer-copyright{
+    opacity: 0.4;
+}
+
+.social-media img {
+    max-height: 5vh;
+    float: left;
+    display: block;
+    opacity: 0.4;
+}
+
+.social-media img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 500ms;
+}
+
+.social-media {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }

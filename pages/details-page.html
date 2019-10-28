@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         
     <!-- CSS-file-links -->
-    <link rel="stylesheet" href="../CSS/home-page.css">
+    <link rel="stylesheet" href="../CSS/details-page.css">
     
     <!--j-query links-->
     <script src="../js/individual-page.js"></script>
@@ -33,10 +33,240 @@
 
 <body>
     <div class="container-fluid" style="background-color: #072446;">
+        
+        
+<!--navigation & spacer bar -->
     
-    
-    
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid navigation-bar">
+                <a class="navbar-brand header-logo" href="#"><h1 class="header-logo">Flik</h1></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home-page.html"><p>HOME</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="library.html"><p>LIBRARY</p></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="watch-list.html"><p>WATCHLIST</p></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                
+            </nav>
+                
+        <div class="row header-spacer">
+            <div class="col-lg-12">
+                <h3 class="welcome-message"></h3>
+            </div>
+        </div> <!-- header-spacer-->
+        
+        
+        
+        
+        
+        
+        
+<!--title & runtime -->     
+        
+        
+        <div class="row title-row justify-content-center" style="margin-top: 5vh;">
+            <h1 class="title">MOVIE TITLE</h1>
+        </div> <!--title-row-->
+        
+        <div class="row runtime-row justify-content-center" style="margin-top: 1vh;">
+            <p>RUNTIME:<span></span></p>
+        </div><!--runtime-row-->
+        
+        
+        
+        
+        
+        
+<!--middle-row-->        
+        
+        <div class="row cool-row" style="margin-top: 5vh;">
+            
+            <div class="col-12 col-md-6 col-lg-4 align-self-center" style="margin-top: 5vh;">
+                <div class="movie-poster"></div>
+                <img src="" class="img-fluid"  style="max-width: 100%; and height: auto;">
+            </div>
+            
+            <div class="movie-details col-lg-4 col-md-6 col-12" style="margin-bottom: 10vh;">
+                
+                <img src="../img/DetailsIcons/pgwarning.svg" class="icon">
+                <h5 class="heading pg-rating">RATING:</h5>
+                <p class="info">Pg yo mama</p>
+                
+                <img src="../img/DetailsIcons/directorIcon.svg" class="icon">
+                <h5 class="heading director">DIRECTOR:</h5>
+                <p class="info">Paris Hilton</p>
+                
+                <img src="../img/DetailsIcons/releaseDateIcon.svg" class="icon">
+                <h5 class="heading release-date">RELEASE DATE:</h5>
+                <p class="info">2000 BC</p>
+                
+                <img src="../img/DetailsIcons/genreIcon.svg" class="icon">
+                <h5 class="heading genre">GENRE:</h5>
+                <p class="info">Ramance, Hooroor</p>
+                
+                <img src="../img/DetailsIcons/starringIcon.svg" class="icon">
+                <h5 class="heading starring">STARRING:</h5>
+                <span>Megan Foxy, George Clowney and Robert Dewey Down</span>
+                
+            </div> <!--movie-details-->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="ratings col-lg-4 d-none d-lg-block" style="margin-top: 10vh;">
+                
+                <div class="ratings-box">
+                    <img src="../img/DetailsIcons/ratingsIcon.svg">
 
+                    <h5 class="heading imbd">IMBD:</h5>
+                    <span class="info">6/170</span>
 
+                    <h5 class="heading rotten-tomatoes">Rotten Tomatoes:</h5>
+                    <span class="info">46/10</span>
+
+                    <h5 class="heading metacritic">Metacritic:</h5>
+                    <span class="info">12/5</span>
+                </div><!--ratings-box-->    
+                
+                <div class="extras-box">
+                   <h5 class="heading language">LANGUAGE:</h5>
+                   <span class="info">English</span>
+                
+                   <h5 class="heading studio">STUDIO:</h5>
+                   <span class="info">Universal</span>
+                </div><!--ratings-box-->
+                
+            </div> <!--ratings-->
+
+        </div><!--poster & cast-->
+        
+        
+        
+        
+
+        
+        
+<!--description & awards row -->
+        
+        
+        <div class="row" style="margin-top: 5vh; padding-bottom: 5vh; background-color: rgba(255,255,255,0.3);">
+            
+            <div class="description-col col-lg-8 col-md-6 col-12 text-center">
+                
+                <img src="../img/DetailsIcons/descriptionIcon.svg" class="bottom-icon">
+                
+                <div class="description-text">
+                    <h2>DESCRIPTION</h2>
+                    <p>blah, blah, blah</p>
+                </div><!--description-text-->  
+            
+            </div><!--description-col-->
+            
+            
+            
+            <div class="awards-col col-lg-4 col-md-6 col-12 text-center d-none d-lg-block d-md-block">
+                
+                <img src="../img/DetailsIcons/awardIcon.svg" class="bottom-icon">
+                
+                <div class="awards-text">
+                    <h2>AWARDS</h2>
+                    <p>blah, blah, blah</p>
+                </div><!--description-text-->  
+            
+            </div><!--awards-col-->
+            
+        </div> <!--chunk-of-text-->
+    
+        
+        
+        
+        
+        
+<!--add to watchlist btn-->
+        
+        <div class="row text-center">
+            
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-5 offset-3">
+                <a href="watch-list.html">
+                    <div class="watchlist-btn-details">
+                        <h5>GO TO WATCHLIST</h5>
+                    </div>
+                </a> <!--watchlist-btn -->
+            </div><!--buttons-row-->
+            
+                
+        </div><!--watchlist btn row-->
+        
+        
+        
+        
+        
+        
+<!--footer-->      
+        
+        <div class="row footer-spacer"></div>
+        
+        <div class="row footer-row">
+            
+            
+            <div class="footer-logo col-lg-4 d-none d-lg-block">
+                <a href="home-page.html">
+                    <img src="../img/Logo&SocialMedia/FooterLogo.svg">
+                </a>
+            </div><!--footer-logo-->
+            
+            
+            <div class="footer-blurb col-lg-4 col-md-">
+                <p class="thats-it">That's it, folks.</p>
+                <p class="footer-copyright">COPYRIGHT | TERM 4 PROJECT</p>
+            </div><!--footer-blurb -->
+            
+            <div class="social-media col-lg-4">
+                
+                <div class="col-4"></div>
+                
+                <a href="https://www.instagram.com/">
+                    <img class="col-2 offset-3 social-icon " src="../img/Logo&SocialMedia/Instagram.svg">
+                </a>
+                    
+                <a href="https://www.facebook.com/">
+                    <img class="col-2 social-icon"  src="../img/Logo&SocialMedia/Facebook.svg">
+                </a>    
+                    
+                <a href="https://twitter.com/login?lang=en">
+                    <img class="col-2 social-icon"  src="../img/Logo&SocialMedia/Twitter.svg">
+                </a>
+                
+            </div> <!--social-media -->
+        
+        
+        </div><!--row footer-row --> 
+        
+        
+        
+        
+        
+        
+        
+        
+    </div> <!--container-fluid-->
 </body>

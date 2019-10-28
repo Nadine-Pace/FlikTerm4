@@ -1,6 +1,7 @@
 $(function(){
+
     
-    console.log("home js linked");
+    
     
     //hero slider
     
@@ -49,22 +50,43 @@ $(function(){
     
     
     
+        var apiCall = 'http://www.omdbapi.com/?t=First+Man&apikey=d90cffd6'
     
+        $.getJSON(apiCall, filmCallBack);
     
-    
-    
-    
-    
-    //api call
-    
-     var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
+        // First Man //
 
-    $.getJSON(apiCall, filmCallBack);
-
-    function filmCallBack(filmData){
-        console.log(filmData);
-    }
-
+//        function filmCallBack(FirstMan){
+//    
+//            var filmName = FirstMan.Title;
+//            var filmGenre = FirstMan.Genre;
+//            var filmPoster = FirstMan.Poster;
+//            var filmRuntime = FirstMan.Runtime;
+//            var filmDirector = FirstMan.Director;
+//            var filmRelease = FirstMan.Released;
+//            var filmDescription = FirstMan.Plot;
+//            var filmYear = FirstMan.Year;
+//            
+//            $(".splashTitle").text(filmName);
+//            $(".backTitle").text(filmName);
+//            $(".splashGenre").text(filmGenre);
+//            $(".backGenre").text(filmGenre);
+//            $(".splashTime").text(filmRuntime);
+//            $(".backTime").text(filmRuntime);
+//            $(".backDirector").text(filmDirector);
+//            $(".backRelease").text(filmRelease);
+//            // $(".movie-poster").attr('src', filmPoster)
+//            $(".backDescription").text(filmDescription);
+//            $(".backYear").text(filmYear);
+//        }
+    
+      
+    
+    
+    
+      
+          
+    
 });
 
 
