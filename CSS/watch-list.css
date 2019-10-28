@@ -286,7 +286,7 @@ h6 {
 .footer {
     min-height: 20vh;
     width: 100%;
-    background-color: rgb(0,176,166);
+    background-color: #072446;
 }
 
 .logocontainer {
@@ -309,6 +309,7 @@ h6 {
     float: right;
     padding-right: 5px;
     opacity: 0.4;
+    
 }
 
 .facebookicon:hover {
@@ -434,3 +435,4 @@ h6 {
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
