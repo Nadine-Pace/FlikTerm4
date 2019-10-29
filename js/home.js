@@ -56,29 +56,29 @@ $(function(){
     
         // First Man //
 
-//        function filmCallBack(FirstMan){
-//    
-//            var filmName = FirstMan.Title;
-//            var filmGenre = FirstMan.Genre;
-//            var filmPoster = FirstMan.Poster;
-//            var filmRuntime = FirstMan.Runtime;
-//            var filmDirector = FirstMan.Director;
-//            var filmRelease = FirstMan.Released;
-//            var filmDescription = FirstMan.Plot;
-//            var filmYear = FirstMan.Year;
-//            
-//            $(".splashTitle").text(filmName);
-//            $(".backTitle").text(filmName);
-//            $(".splashGenre").text(filmGenre);
-//            $(".backGenre").text(filmGenre);
-//            $(".splashTime").text(filmRuntime);
-//            $(".backTime").text(filmRuntime);
-//            $(".backDirector").text(filmDirector);
-//            $(".backRelease").text(filmRelease);
-//            // $(".movie-poster").attr('src', filmPoster)
-//            $(".backDescription").text(filmDescription);
-//            $(".backYear").text(filmYear);
-//        }
+        function filmCallBack(FirstMan){
+    
+            var filmName = FirstMan.Title;
+            var filmGenre = FirstMan.Genre;
+            var filmPoster = FirstMan.Poster;
+            var filmRuntime = FirstMan.Runtime;
+            var filmDirector = FirstMan.Director;
+            var filmRelease = FirstMan.Released;
+            var filmDescription = FirstMan.Plot;
+            var filmYear = FirstMan.Year;
+            
+            $(".splashTitle").text(filmName);
+            $(".backTitle").text(filmName);
+            $(".splashGenre").text(filmGenre);
+            $(".backGenre").text(filmGenre);
+            $(".splashTime").text(filmRuntime);
+            $(".backTime").text(filmRuntime);
+            $(".backDirector").text(filmDirector);
+            $(".backRelease").text(filmRelease);
+            // $(".movie-poster").attr('src', filmPoster)
+            $(".backDescription").text(filmDescription);
+            $(".backYear").text(filmYear);
+        }
     
       
     

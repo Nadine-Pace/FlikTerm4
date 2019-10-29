@@ -2,10 +2,10 @@ $(function () {
     getMovies('man', 'movie', null, '1');
     getMovies('wonder', 'movie', null, '1');
     
-        var row = document.createElement('div');
-                row.setAttribute('class', 'row container-fluid');
+    var row = document.createElement('div');
+    row.setAttribute('class', 'row container-fluid');
 
-function getMovies(keyword, type, year, page) {
+    function getMovies(keyword, type, year, page) {
     //http://www.omdbapi.com/?apikey=d90cffd6&s=man&type=movie&r=json&page=1
 
     var url = 'http://www.omdbapi.com/?apikey=d90cffd6';
@@ -38,108 +38,86 @@ function getMovies(keyword, type, year, page) {
             
             var data = JSON.parse(this.response);
             
-            
-            
-            
-
-            if(data) {
                 
                 for (var i = 1; i <= data.Search.length; i++) {
                     var movie = data.Search[i];
-
-                    if (movie) {
+                    
+                    console.log(movie);
+                    
+                    
+                    $(".movies-row").append(
                         
-                        
-                        var colDiv = document.createElement('div');
-                        colDiv.setAttribute('class', 'col-lg-2');
-                        colDiv.setAttribute('style', 'text-align: center;');
+                    "<div class='flip-card col-lg-2 col-md-3 col-sm-2' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.Poster + "></div><div class='splash-info'><div class='splash-row-one'><h3 class='movie-title' id='flik-title'>" + movie.Title + "</h3></div><p class='show-genre'>" + "flikGenre" + "</p><div class='movie-time d-none d-lg-block'><img src='../img/UI/Clock.svg'><p class='show-time'>" + "flikTime" + "</p></div></div></div></div><div class='flip-card-back'><h2>" + movie.Title + "</h2><p>RUNTIME:</p><h5>" + "flikTime" + "</h5><p>DIRECTOR:</p><h5>" + "flikDirector" + "</h><p>RELEASE DATE:</p><h5>" + "flikDate" + "</h5><p>GENRE</p><h5>" + "flikGenre" + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>"); 
 
-                        var label = document.createElement('label');
+             }
+             
+                          
+        }
+    }
+}
 
-                        var input = document.createElement('input');
-                        input.setAttribute('type', 'checkbox');
+    function createTextElement(parent, text) {
 
-                        var cardDiv = document.createElement('div')
-                        cardDiv.setAttribute('class', 'card');
+        if (parent && text) {
+            var textElement = document.createTextNode(text);
+            parent.appendChild(textElement);
+        }
+    }
 
-                        var frontDiv = document.createElement('div');
-                        frontDiv.setAttribute('class', 'front');
+    function getMovieInformation(id, parentNode, plotType) {
+        //http://www.omdbapi.com/?apikey=d90cffd6&i=tt0316654&plot=short
+        var url = 'http://www.omdbapi.com/?apikey=d90cffd6';
 
-                        var image = document.createElement('img');
-                        image.setAttribute('src', movie.Poster);
+        if (id) {
+            url = url + '&i=' + id;
 
-                        var backDiv = document.createElement('div');
-                        backDiv.setAttribute('class', 'back');
+            if (plotType) {
+                url = url + '&plot=' + plotType;
+            }
 
-                        var h3 = document.createElement('h3');
-                        h3.setAttribute('class', 'backTitle');
-                        createTextElement(h3, movie.Title);
+            var apiRequest = new XMLHttpRequest();
+            apiRequest.open('GET', url, true);
+            apiRequest.send();
+            apiRequest.onload = function () {
+                var data = JSON.parse(this.response);
 
-                        var h6 = document.createElement('h6');
-                        h6.setAttribute('class', 'backYear');
-                        createTextElement(h6, movie.Year);
-
-                        var p = document.createElement('p');
-                        p.setAttribute('class', 'backDescription');
-                        getMovieInformation(movie.imdbID, p, 'short');
-
-                        frontDiv.appendChild(image);
-                        cardDiv.appendChild(frontDiv);
-
-                        backDiv.appendChild(h3);
-                        backDiv.appendChild(h6);
-                        backDiv.appendChild(p);
-                        cardDiv.appendChild(backDiv);
-
-                        label.appendChild(input);
-                        label.appendChild(cardDiv);
-
-                        colDiv.appendChild(label);
-                        row.appendChild(colDiv);
-                        container.appendChild(row);
-
-                    }
+                if (parentNode) {
+                    createTextElement(parentNode, data.Plot);
                 }
+
+                return data;
             }
         }
+
+        return null;
     }
-}
-
-function createTextElement(parent, text) {
-
-    if (parent && text) {
-        var textElement = document.createTextNode(text);
-        parent.appendChild(textElement);
-    }
-}
-
-function getMovieInformation(id, parentNode, plotType) {
-    //http://www.omdbapi.com/?apikey=d90cffd6&i=tt0316654&plot=short
-    var url = 'http://www.omdbapi.com/?apikey=d90cffd6';
-
-    if (id) {
-        url = url + '&i=' + id;
-
-        if (plotType) {
-            url = url + '&plot=' + plotType;
-        }
-
-        var apiRequest = new XMLHttpRequest();
-        apiRequest.open('GET', url, true);
-        apiRequest.send();
-        apiRequest.onload = function () {
-            var data = JSON.parse(this.response);
-
-            if (parentNode) {
-                createTextElement(parentNode, data.Plot);
+    
+    
+    
+    
+    
+    
+//details page local storage
+    
+    $(".flip-details").click(function() {
+       console.log("CLICKS");
+        
+        var storageReference = $(this).find(".flik-title").text();
+        console.log(storageReference);
+        
+        for(i = 0; i < data.Search.length; i ++){
+            
+            if(data.Search[i].id === storageReference) {
+                
+                console.log("it works")
+                
             }
-
-            return data;
         }
-    }
-
-    return null;
-}
-
+        
+        
     });
+    
+    
+
+});
 
