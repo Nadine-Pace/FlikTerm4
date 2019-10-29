@@ -1,7 +1,6 @@
 body, html{
     background-color: black !important;
     color:white !important;
-
 }
 
 .no-gutters {
@@ -28,6 +27,8 @@ h1 {
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
+    height: auto;
+    margin: 0 auto;
     
 }
 
@@ -40,6 +41,8 @@ p {
     font-size: 16px;
     margin-bottom: 10px;
     margin-top: 20px;
+    height: auto;
+    margin: 0 auto;
 }
 
 h6 {
@@ -50,6 +53,8 @@ h6 {
     font-size: 20px;
     color: white;
     letter-spacing: 1px;
+    height: auto;
+    margin: 0 auto;
 }
 
 h3{
@@ -71,33 +76,58 @@ h3{
     height: 20px;
 }
 
-.image-0{
-    width: 400px;
+#image-0{
+    max-width: 50%; 
+    height: auto;
+    margin: 0 auto;
+}
+
+#image-01{
+    max-width: 50%; 
+    height: auto;
+    margin: 0 auto;
+}
+
+.social-icon{
+    max-width: 6%; 
+    height: auto;
+    margin: 0 auto;
+    margin-left: 100px;
+    padding-left: 10px;
 }
 
 .container-1{
     background-image: url(../img/Headers/2MdY.gif);
     background-size: cover;
-     height: 100vh;
+     max-width: 100vh;
      background-repeat: no-repeat;
      background-position: center;
-     max-width: 100vh;
 }
 
 .sign-in{
-    width: 540px;
-    height: 740px;
-    background-color: #072446;
-   opacity: 0.9;
+background-color: #072446;
+   opacity: 1;
    padding-top: 50px;
 }
+
+.row{
+    margin: 0;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
 
 
 #image-1{
     text-align: center;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-image: url(../img/UserIcons/samuser1.png);
     background-position: center;
     background-size:cover;
@@ -107,8 +137,8 @@ h3{
 #image-2{
     text-align: center;
     border-radius: 100%;
-    width: 150px;
-    height: 100%;
+    width: 120px;
+    height: 120px;
     background-image: url(../img/UserIcons/jackuser1.png);
     background-position: center;
     background-size:cover;
@@ -118,8 +148,8 @@ h3{
 #image-3{
     text-align: center;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-image: url(../img/UserIcons/bobuser1.png);
     background-position: center;
     background-size:cover;
@@ -136,6 +166,7 @@ h3{
     background-position: center;
     background-size:cover;
     overflow: hidden;
+    padding-top: 50px;
 }
 
 .overlay:hover{
@@ -146,12 +177,13 @@ h3{
 #image-4{
     text-align: center;
     border-radius: 100%;
-     width: 150px;
-    height: 150px;
+     width: 120px;
+    height: 120px;
     background-image: url(../img/UserIcons/newuser1.png);
     background-position: center;
     background-size:cover;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .container-fluid{
@@ -165,13 +197,10 @@ h3{
 .container-2{
     background-image: url(../img/Headers/PAA.gif);
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
 }
-
-
 
 .text-line-1 {
     background-color: transparent;
@@ -182,9 +211,13 @@ h3{
     border-left: none;
     border-right: none;
     border-bottom: solid #eeeeee 1px;
-    padding: 3px 100px;
+    padding: 3px 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #sign-in-btn{
@@ -194,7 +227,7 @@ h3{
     background-color: #013A67;
     text-align: center;
     border-radius: 5px;
-    margin-top: 80px;
+    margin: 0 auto;
 }
 
 #sign-in-btn:hover {
@@ -202,10 +235,24 @@ h3{
     background-color: crimson;
 }
 
+#submit-btn{
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #013A67;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#submit-btn:hover {
+    opacity:1;
+    background-color: crimson;
+}
+
 .container-3{
      background-image: url(../img/Headers/PAA.gif);
      background-size: cover;
-     height: 100vh;
      background-repeat: no-repeat;
      background-position: center;
      max-width: 100%;
@@ -218,7 +265,7 @@ h3{
     background-color: #013A67;
     text-align: center;
     border-radius: 5px;
-    margin-top: 80px;
+    margin: 0 auto;
 }
 
 #sign-up-btn:hover {
@@ -227,8 +274,6 @@ h3{
 }
 
 .sign-up{
-    width: 540px;
-    height: 700px;
     background-color: #072446;
-   opacity: 0.9;
+   opacity: 1;
 }

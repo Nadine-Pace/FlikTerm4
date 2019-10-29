@@ -1,75 +1,34 @@
 $(document).ready(function(){
-  $(".container-1").show(1000);
-    $(".container-2").hide(1000);
-    $(".container-3").hide(1000);
-});
 
+  /*hide and show*/
 
-$(document).ready(function(){
-  $("#image-1").click(function(){
-    $(".container-3").hide(1000);
-      $(".container-1").hide(1000);
-      $(".container-2").show(1000);
-  });
-    
-    $(document).ready(function(){
-  $("#image-2").click(function(){
-    $(".container-3").hide(1000);
-      $(".container-1").hide(1000);
-      $(".container-2").show(1000);
-  });
-        
-    $(document).ready(function(){
-  $("#image-3").click(function(){
-    $(".container-3").hide(1000);
-      $(".container-1").hide(1000);
-      $(".container-2").show(1000);
-  });
-        
-    
-  $("#image-4").click(function(){
-    $(".container-1").hide(1000);
-      $(".container-2").hide(1000);
-      $(".container-3").show(1000);
-  });
-});
-});
-});
+  $('.container-2').hide();
+  $('.container-3').hide();
 
-$(document).ready(function() {
-  $('.error').hide();
-  $('#submit').click(function(){
-    var name = $('#name').val();
-    var email = $('#email').val();
-
-    if(name== ''){
-      $('#name').next().show();
-      return false;
-    }
-    if(email== ''){
-      $('#email').next().show();
-      return false;
-    }
-    if(IsEmail(email)==false){
-      $('#invalid_email').show();
-      return false;
-    }
-    $.post("", $("#myform").serialize(),  function(response) {
-      $('#myform').fadeOut('slow',function(){
-      $('#correct').html(response);
-      $('#correct').fadeIn('slow');
-   });
+ $("#image-1").add("#image-2").add("#image-3").click(function(){
+  $('.container-2').fadeTo(500, 1);
+  $('.container-1').hide();
+  $('.container-3').hide();
  });
-return false;
-});
-});
-function IsEmail(email) {
-var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-if(!regex.test(email)) {
-return false;
-}else{
-return true;
-}
-}
 
-   
+ $("#image-4").click(function(){
+  $('.container-3').fadeTo(500, 1);
+  $('.container-1').hide();
+  $('.container-2').hide();
+ });
+});
+
+/*validation*/
+$(document).ready(function(){
+$("#submit-btn").click(function(){
+  var password = $('#password1').validate();
+
+  $(".error").remove();
+
+  if (password.length < 8){
+    $('#password1').after('<span class="error">Password must be at least 8 characters long</span>');
+  }
+});
+
+
+});
