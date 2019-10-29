@@ -153,6 +153,13 @@ h3 {
 
 
 
+    /* header spacer / welcome message */
+.header-spacer {
+    background-color: crimson;
+    height: auto;
+    min-height: 1vh;
+}
+
 
 
 
@@ -468,13 +475,13 @@ h3 {
 
 
 
-    /* movie-card */
+      /* movie-card */
 .splash-info {
     color: white;
 }
 
 .movie-poster {
-    background-color: white;
+    background-color: black;
     width: 200px;
     height: 300px;
     
@@ -482,15 +489,18 @@ h3 {
     margin-bottom: 5%;
 }
 
-.splash-row-one {
-    width: 100%;
+.movie-poster img {
+    background-size: cover;
+    max-height: 300px;
 }
 
-.splashTitle {
+.splash-row-one {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
 }
 
-.splashGenre {
+.show-genre {
     width: 100%;
     letter-spacing: 1px;
     font-size: 10px;
@@ -499,10 +509,7 @@ h3 {
     
     color: white;
     margin-bottom: 2%;
-}
-
-.splashTime {
-    float: left;
+    text-transform: uppercase;
 }
 
 .movie-time img {
@@ -511,21 +518,30 @@ h3 {
     margin-right: 5%;
 }
 
-.show-time {
-    float: right;
-    color: white;
-    font-size: 13px;
+.movie-title {
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
+.show-time {
+    float: left;
+    color: white;
+    font-size: 13px;
+    margin-top: -3%;
+}
 
 .mobile-btn {
-    width: 48%;
-    background-color: crimson;
+    width: 90%;
+    
+    border-style: solid;
+    border-color: crimson;
+    border-radius: 100px;
+    
     height: auto;
     
     margin-bottom: 5%;
-    border-radius: 5%;
     margin-right: 2%;
+    margin-left: 5%;
     
     padding: 2%;
     
@@ -540,10 +556,17 @@ h3 {
 
     /*hover state for movie card */
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
 .flip-card {
     background-color: rgba(255,255,255,0.3);
-    height: auto;
+    height: 470px;
     perspective: 1000px;
+    color: white;
 }
 
 .flip-card-inner {
@@ -571,16 +594,25 @@ h3 {
     transform: rotateY(180deg);
     background-color: rgba(255,255,255,0.3);
     padding: 5%;
+    padding-top: 10%;
     height: auto;
+    margin-top: 2%;
+}
+
+.flip-card-back h2 {
+    font-size: 22px;
 }
 
 .flip-card-back p {
     margin-top: 7%;
     font-weight: 100;
+    font-size: 12px;
 }
 
 .flip-card-back h5 {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 
@@ -591,40 +623,48 @@ h3 {
     margin-left: 5%;
     margin-top: 15%;
     
-    height: auto;
+    height: 32px;
     border-radius: 100px;
+    padding-top: 0.5%;
 }
 
 .flip-watchlist p {
     padding-top: 2%;
     padding-bottom: 1%;
+    margin-top: 2%;
 }
 
 .flip-watchlist:hover {
     cursor: pointer;
     transition: all ease 500ms;
     background-color: crimson;
+    color: white;
 }
 
 .flip-details {
-    background-color: #072446;
+    border-color: crimson;
+    border-style: solid;
+    border-width: 2px;
     
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     
-    height: auto;
+    height: 32px;
     border-radius: 100px;
+    
+    padding-top: 3%;
 }
 
 .flip-details p {
-    padding-top: 2%;
-    padding-bottom: 1%;
+    margin-top: 0px;
 }
 
 .flip-details:hover {
     cursor: pointer;
     transition: all ease 500ms;
     background-color: crimson;
+    color: white;
 }
 
 
@@ -633,6 +673,10 @@ h3 {
 
 
     /*extra buttons*/
+
+.movie-card {
+    margin-bottom: 2vh;
+}
 
 .library-btn-home {
     border-color: crimson;

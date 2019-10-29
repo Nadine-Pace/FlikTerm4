@@ -14,9 +14,22 @@
 
 
     /* general styling and stripping*/
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    
+    margin: 2%;
+    font-size: 35px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #072446;
 }
 
 a {
@@ -53,7 +66,7 @@ p {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    line-height: 27px;
+    text-decoration: none;
 }
 
 h6 {
@@ -65,6 +78,39 @@ h6 {
     color: white;
     letter-spacing: 1px;
 }
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px;
+    
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px; 
+    text-decoration: none;
+}
+
+h3 {   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
 
 
 
@@ -156,6 +202,7 @@ h6 {
     
     color: white;
     margin-bottom: 2%;
+    text-transform: uppercase;
 }
 
 .movie-time img {
@@ -166,6 +213,7 @@ h6 {
 
 .movie-title {
     font-size: 18px;
+    margin-bottom: 0px;
 }
 
 .show-time {
@@ -197,12 +245,19 @@ h6 {
 
     /*hover state for movie card */
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
 .flip-card {
     background-color: rgba(255,255,255,0.3);
-    height: 500px;
+    height: 450px;
     perspective: 1000px;
     color: white;
 }
+
 
 .flip-card-inner {
     position: relative;
@@ -229,7 +284,13 @@ h6 {
     transform: rotateY(180deg);
     background-color: rgba(255,255,255,0.3);
     padding: 5%;
+    padding-top: 10%;
     height: auto;
+    margin-top: 2%;
+}
+
+.flip-card-back h2 {
+    font-size: 22px;
 }
 
 .flip-card-back p {
@@ -252,40 +313,48 @@ h6 {
     margin-left: 5%;
     margin-top: 15%;
     
-    height: auto;
+    height: 32px;
     border-radius: 100px;
+    padding-top: 0.5%;
 }
 
 .flip-watchlist p {
     padding-top: 2%;
     padding-bottom: 1%;
+    margin-top: 2%;
 }
 
 .flip-watchlist:hover {
     cursor: pointer;
     transition: all ease 500ms;
     background-color: crimson;
+    color: white;
 }
 
 .flip-details {
-    background-color: #072446;
+    border-color: crimson;
+    border-style: solid;
+    border-width: 2px;
     
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     
-    height: auto;
+    height: 32px;
     border-radius: 100px;
+    
+    padding-top: 3%;
 }
 
 .flip-details p {
-    padding-top: 2%;
-    padding-bottom: 1%;
+    margin-top: 0px;
 }
 
 .flip-details:hover {
     cursor: pointer;
     transition: all ease 500ms;
     background-color: crimson;
+    color: white;
 }
 
 
@@ -305,6 +374,7 @@ h6 {
 
 .footer-row {
     height: auto;
+    background-color: #072446;
 }
 
 .footer-logo img{
@@ -320,10 +390,12 @@ h6 {
 .thats-it {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
+    color: white;
 }
 
 .footer-copyright{
     opacity: 0.4;
+    color: white;
 }
 
 .social-media img {
