@@ -74,6 +74,10 @@ h5 {
     font-size: 13px;
     color: white;
     letter-spacing: 1px;
+    
+    
+    text-decoration: none;
+    color: inherit;
 }
 
 div {
@@ -83,8 +87,6 @@ div {
     color: white;
     letter-spacing: 1px; 
     text-decoration: none;
-    
-    
 }
 
 h3 {   
@@ -96,11 +98,6 @@ h3 {
     color: white;
 }
 
-.library-heading h1{
-    font-size: 49pt;
-}
-
-
 
 
 
@@ -108,7 +105,7 @@ h3 {
 
     /* navigation bar & spacer */
 
-    .navbar {
+.navbar {
         margin-bottom: 0;
         border-radius: 0;
         padding: 1% 0;
@@ -118,27 +115,27 @@ h3 {
         height: auto;
     }
 
-    .navbar-brand{
+.navbar-brand{
         float: left;
         padding: 0px 15px 5px;
         color: #fff;
     }
 
-    .navbar-brand h1{
+.navbar-brand h1{
         font-size: 30pt;
         font-family:'Pacifico', cursive;
     }
     
-    #navbarContent p{
+#navbarContent p{
         font-family: 'Montserrat', sans-serif;
         padding: 0% 6%;
     }
 
-    .bg-dark{
+.bg-dark{
         background-color: #072446!important;
     }    
     
-    .spacer-line  .line{
+.spacer-line  .line{
         background-color: crimson;
         min-height: 1vh;
         height: auto;
