@@ -37,13 +37,20 @@ $("#submit-btn").click(function(){
 /* Local Storage */
 
 
-if (typeof(Storage) !== "undefined") {
- 
-  localStorage.setItem("#password1", "Sam12345");
-  document.getElementById("#password").innerHTML = localStorage.getItem("#password1");
-} else {
-  document.getElementById("#password").innerHTML = "Sorry, your browser does not support Web Storage...";
+$("#sign-in-btn").add("sign-up-btn").on("click", function(){
+var storageRefrence = +$(this).find("#image-1").text();
+console.log(storageRefrence);
+
+for(i =0; i < Data.image.length; i++){
+  if(data.image[i].id === storageRefrence){
+
+
+
+
+  }
 }
+
+});
 
 
 });
