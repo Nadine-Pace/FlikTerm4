@@ -27,6 +27,29 @@
     <!--j-query links-->
     <script src="../js/home.js"></script>
     <script src="../js/apiRequest.js"></script>
+    
+    <script>
+        function workDammit(){
+            console.log("WORKIN");
+            
+            
+            $(".flip-details").on("click", function() {
+     
+               console.log("CLICK");
+
+                var storageReference = $(this).find(".flik-title").text();
+                console.log(storageReference);
+
+                    for(i = 0; i < data.Search.length; i ++){
+
+                        if(data.Search[i].id === storageReference) {
+
+                            console.log("it works")
+
+                        }
+                    }   
+            })
+    </script>
 
 </head>
 
@@ -308,14 +331,29 @@
         
 <!--recommended row -->        
         
-        <div class="row" style="background-color: rgba(255,255,255,0.3);">
+        
+        
+        
+        <!-- recommended heading with see-more/see-les -->
+        <div class="row d-none d-lg-flex" style="background-color: rgba(255,255,255,0.3);">
             
             <h1 class="col-lg-10" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">RECOMMENDED FLIKS</h1>
             
-            <p class="see-more col-lg-1 d-none d-lg-block">SEE MORE</p>
-            <p class="see-less col-lg-1 d-none d-lg-block">SEE LESS</p>
+            <p class="see-more col-lg-1">SEE MORE</p>
+            <p class="see-less col-lg-1">SEE LESS</p>
 
         </div>
+        
+        
+        
+        <!-- recommended heading without see-more see-less -->
+        <div class="row d-block d-lg-none" style="background-color: rgba(255,255,255,0.3);">
+            
+            <h1 class="col-lg-10" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">RECOMMENDED FLIKS</h1>
+        </div>
+        
+        
+        
         
 
     
@@ -334,14 +372,39 @@
         
         
         <!--only visible on l/xl-->
-        <div class="row recommended-row">
+        <div class="row recommended-row d-none d-lg-flex">
+            
         </div> <!--recommended-row-->
         
        
         
-<!--team section -->
         
-        <div class="row" style="background-color: rgba(255,255,255,0.3);">
+<!--team section  --- working-->
+        
+        <div class="row makers-heading" style="background-color: rgba(255,255,255,0.3); margin-top: 2%;">
+            <h1 class="col-12" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">RANDOM MOVIES OF THE WEEK</h1>
+        </div>
+        
+        <div class="row" style="margin-top: 2%;">
+            
+           
+            
+            
+            
+        
+        </div><!-- random - row -->
+            
+               
+        
+        
+        
+        
+        
+        
+        
+<!--team section  --- working-->
+        
+        <div class="row makers-heading" style="background-color: rgba(255,255,255,0.3); margin-top: 2%;">
             <h1 class="col-12" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">MEET THE MAKERS</h1>
         </div>
         
@@ -358,7 +421,7 @@
             </div><!--member-block-->
             
             <div class="member-block col-6 col-lg-3">
-                <div class="member-photo"><img src="../img/TeamThumbnails/Nadine.png"></div>
+                <div class="member-photo"><img src="../img/TeamThumbnails/Jeandre.png"></div>
                 
                 <div class="member-details text-center">
                     <h3 class="member-name">Jeandre De Villiers</h3>
