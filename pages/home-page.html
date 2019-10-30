@@ -35,7 +35,7 @@
     <div class="container-fluid">
         
         
-<!--navigation & spacer bar -->
+<!--navigation & spacer bar -- working -->
     
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid" id="top">
             <a class="navbar-brand" href="#">
@@ -72,16 +72,9 @@
 
         
         
+<!-- local storage welcome message -->
         
-    <div class="header-underline">
-        <div class="row">
-            <div class="spacer-line col-lg-12">
-                <div class="line"></div>
-            </div>
-        </div>
-    </div>
-
-                
+        
         <div class="row header-spacer">
             <div class="col-lg-12">
                 <h3 class="welcome-message"></h3>
@@ -90,7 +83,7 @@
         
         
         
-<!--home-tablet slider-->
+<!-- home-tablet slider --- working -->
         
         <div class="row d-none d-md-block d-lg-none">
             <div class="tablet-image">
@@ -101,7 +94,7 @@
         
         
         
-<!--hero slider pages -->
+<!--hero slider pages -- working -->
         
         <div class="row hero-slider d-none d-lg-block">
             
@@ -315,73 +308,102 @@
         
 <!--recommended row -->        
         
-        <div class="row" style="background-color: #072446;">
+        <div class="row" style="background-color: rgba(255,255,255,0.3);">
             
-            <h1 class="col-lg-10" style="margin-left: 2%; margin-bottom: 2%;">RECOMMENDED FLIKS</h1>
+            <h1 class="col-lg-10" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">RECOMMENDED FLIKS</h1>
             
-            <p class="see-more col-lg-1">SEE MORE</p>
-            <p class="see-less col-lg-1">SEE LESS</p>
+            <p class="see-more col-lg-1 d-none d-lg-block">SEE MORE</p>
+            <p class="see-less col-lg-1 d-none d-lg-block">SEE LESS</p>
 
         </div>
         
 
     
-        <!--scroller hidden on xl-->
-        <div class="horizontal-scroller d-lg-none">   
+        <!-- horizontal scroller hidden on xl-->
+        <div class="horizontal-scroller d-lg-none d-xl-none text-center">   
             
-            <div class="row movie-row flex-nowrap" style="background-color:  #072446;">
+            <div class="row movie-row flex-nowrap text-center" style="background-color:  #072446;">
 
-                <div class="movie-card col-7 col-md-4" style="background-color:  #072446;">
-                    
-                    <div class="movie-poster"></div>
-
-                    <div class="splash-info">
-                        <div class="splash-row-one">
-                            <h3>Placeholder Title</h3>
-                            
-                        </div> <!--splash-row-one-->
-                        <p class="show-genre">GENRE GOES HERE</p>
-                        <div class="movie-time d-none d-lg-block">
-                                <p class="show-time">Time</p>
-                                <img src="../img/UI/Clock.svg">
-                            </div> <!--movie-time-->
-                        
-                    </div><!--splash-info-->
-
-                    <a href="watch-list.html"><div class="mobile-btn watchlist-btn d-lg-none">ADD TO<br> WATCHLIST</div></a>
-
-                    <a href="details-page.html"><div class="mobile-btn details-btn d-lg-none">MORE<br>DETAILS</div></a>
-                </div> <!--movie-card-->
 
 
             </div> <!--movie-row-->
             
         </div> <!--horizontal-scroller-->
  
-        
-        
+    
         
         
         <!--only visible on l/xl-->
         <div class="row recommended-row">
-        
-            
-
-            
-            
         </div> <!--recommended-row-->
         
        
         
+<!--team section -->
         
+        <div class="row" style="background-color: rgba(255,255,255,0.3);">
+            <h1 class="col-12" style="margin-left: 2%; margin-bottom: 2%; margin-top: 2%;">MEET THE MAKERS</h1>
+        </div>
+        
+        <div class="row" style="margin-top: 2%;">
+            
+            <div class="member-block col-6 col-lg-3">
+                <div class="member-photo"><img src="../img/TeamThumbnails/Nadine.png"></div>
+                
+                <div class="member-details text-center">
+                    <h3 class="member-name">Claudia Ferreira</h3>
+                    <h5 class="member-number">180181</h5>
+                    <p class="member-role">API Queen and pro library filterer.</p>
+                </div> <!--member-details-->    
+            </div><!--member-block-->
+            
+            <div class="member-block col-6 col-lg-3">
+                <div class="member-photo"><img src="../img/TeamThumbnails/Nadine.png"></div>
+                
+                <div class="member-details text-center">
+                    <h3 class="member-name">Jeandre De Villiers</h3>
+                    <h5 class="member-number">190025</h5>
+                    <p class="member-role">Sign-in and GIF specialist.</p>
+                </div> <!--member-details-->    
+            </div><!--member-block-->
+            
+            <div class="member-block col-6 col-lg-3">
+                <div class="member-photo"><img src="../img/TeamThumbnails/Nadine.png"></div>
+                
+                <div class="member-details text-center">
+                    <h3 class="member-name">Nadine Pace</h3>
+                    <h5 class="member-number">190043</h5>
+                    <p class="member-role">Home page manager and local storage expert.</p>
+                </div> <!--member-details-->    
+            </div><!--member-block-->
+            
+            <div class="member-block col-6 col-lg-3">
+                <div class="member-photo"><img src="../img/TeamThumbnails/Nadine.png"></div>
+                
+                <div class="member-details text-center">
+                    <h3 class="member-name">Pfano Khampha</h3>
+                    <h5 class="member-number">190068</h5>
+                    <p class="member-role">Watchlist populator and director.</p>
+                </div> <!--member-details-->    
+            </div><!--member-block-->
+            
+            
+            
+            
             
             
         
-<!--watchlist & library buttons-->        
+        </div><!-- team row -->
+            
+            
+        
+        
+        
+<!--watchlist & library buttons -- working -->        
 
             
 
-        <div class="row text-center">
+        <div class="row text-center" style="background-color: aqua; margin-top: 10vh;">
             
             
             <div class="col-5 offset-1 col-md-4 offset-md-2 col-lg-2 offset-lg-4">
@@ -420,7 +442,7 @@
             
                 <div class="footer-logo col-lg-4 d-none d-lg-block">
                     <a href="#top">
-                        <img src="../img/Logo&SocialMedia/FooterLogo.svg">
+                        <img src="../img/Logo&SocialMedia/HeaderLogo.png">
                     </a>
                 </div><!--footer-logo-->
             
