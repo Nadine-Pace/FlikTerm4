@@ -672,11 +672,45 @@ a:hover, a:visited, a:link, a:active
 
 
 
-    /*extra buttons*/
-
-.movie-card {
-    margin-bottom: 2vh;
+    /* team section */
+.member-block {
+    height: auto;
+    padding: 10px;
 }
+
+.member-details {
+    width: 90%;
+    margin-left: 5%;
+    
+    border-color: rgba(255,255,255,0.3);
+    border-style: solid;
+    border-width: 5px;
+    padding: 5%;
+    
+    margin-top: -40%;
+}
+
+.member-name {
+    margin-top: 25%;
+    text-transform: uppercase;
+}
+
+.member-number {
+    letter-spacing : 5px;
+    margin-bottom: 10px;
+}
+
+.member-photo img {
+    max-width: 80%;
+    margin-left: 8%;
+}
+
+
+
+
+
+
+    /*extra buttons*/
 
 .library-btn-home {
     border-color: crimson;
