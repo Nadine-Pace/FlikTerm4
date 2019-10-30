@@ -165,32 +165,30 @@ h6 {
 }
 
 .watchlistbox {
-    height: 10vh;
+    height: 10px;
     width: 40%;
-    margin-left: 100px;
+    margin-left: 50px;
     padding-top: 50px;
 }
 
 .watchlistline {
     height: 2.5px;
     width: 450px;
-    margin-top: 40px;
+    margin-top: 25px;
     background-color: white;
 }
 
 
-
 .filmbox {
-    width: 80%;
+    width: 100%;
     height: 300px;
-    padding-top: 50px;
 
 }
 
 
 .picturebox {
     height: 300px;
-    width:40%;
+    width:200px;
     float: left;
     background-color: yellow;
 }
@@ -202,7 +200,7 @@ h6 {
 
 .textbox {
     height: 300px;
-    width:60%;
+    width:55%;
     float: right;
     background-color: white;
     border-bottom-right-radius: 7px;
@@ -250,8 +248,8 @@ h6 {
 .watchlistparagraph {
     height: 100px;
     width: 80%;
-    margin-left: 5.5%;
-    margin-top: 60px;
+    margin-left: 4%;
+    margin-top: 100px;
 
 }
 
@@ -259,7 +257,7 @@ h6 {
     
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 15px;
     word-spacing: 1px;
 
 }
