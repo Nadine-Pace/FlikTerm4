@@ -1,7 +1,7 @@
+ /* Hide and Show */
+
+
 $(document).ready(function(){
-
-  /*hide and show*/
-
   $('.container-2').hide();
   $('.container-3').hide();
 
@@ -18,7 +18,10 @@ $(document).ready(function(){
  });
 });
 
-/*validation*/
+
+/* Validation */
+
+
 $(document).ready(function(){
 $("#submit-btn").click(function(){
   var password = $('#password1').validate();
@@ -29,6 +32,18 @@ $("#submit-btn").click(function(){
     $('#password1').after('<span class="error">Password must be at least 8 characters long</span>');
   }
 });
+
+
+/* Local Storage */
+
+
+if (typeof(Storage) !== "undefined") {
+ 
+  localStorage.setItem("#password1", "Sam12345");
+  document.getElementById("#password").innerHTML = localStorage.getItem("#password1");
+} else {
+  document.getElementById("#password").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
 
 
 });
