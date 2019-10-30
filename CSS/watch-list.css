@@ -181,16 +181,16 @@ h6 {
 
 
 .filmbox {
-    width: 500px;
+    width: 80%;
     height: 300px;
     padding-top: 50px;
-    margin-left: 5.5%;
+
 }
 
 
 .picturebox {
     height: 300px;
-    width:200px;
+    width:40%;
     float: left;
     background-color: yellow;
 }
@@ -202,7 +202,7 @@ h6 {
 
 .textbox {
     height: 300px;
-    width:300px;
+    width:60%;
     float: right;
     background-color: white;
     border-bottom-right-radius: 7px;
