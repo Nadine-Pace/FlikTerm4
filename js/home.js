@@ -44,22 +44,26 @@ $(function(){
         
         var loggedUser = $(this).parent(".user-icon-sam").find(".sam").text();
         
-        localStorage.setItem('loggedUser', loggedUser);
+        localStorage.setItem("loggedUser", loggedUser);
         
         
         var homeUser = localStorage.getItem("loggedUser");
         
+        
+        
         console.log(homeUser + "home user working");
         
-        $("#welcome-message").text(homeUser);
+        
         
         console.log(loggedUser);
+        
+        
+        document.getElementById("#welcome-message").text(loggedUser);
         
         
         
         
     });
-    
     
     
     
