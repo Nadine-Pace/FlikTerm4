@@ -91,3 +91,12 @@ $(function(){
 
 
 
+
+var importMovie = localStorage.getItem("transferMovie");
+
+// Run API withg variable as search 
+
+// s
+
+
+
