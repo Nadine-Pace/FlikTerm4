@@ -27,13 +27,13 @@ if(password === ""){
   $(".validator").text("While FLIK! You're missing something...");
 } else if(password === registeredPassewords[0]){
   localStorage.setItem("activeUser", "SAM");
-  location.href = "../pages/home-page.html"
+  location.href = "file:///Users/jeandredevilliers/Desktop/FlikTerm4/pages/home-page.html"
 } else if(password === registeredPassewords[1]){
   localStorage.setItem("activeUser", "JACK");
-  location.href = "../pages/home-page.html"
+  location.href = "file:///Users/jeandredevilliers/Desktop/FlikTerm4/pages/home-page.html"
 }else if(password === registeredPassewords[2]){
   localStorage.setItem("activeUser", "BOBBY");
-  location.href = "../pages/home-page.html"
+  location.href ="file:///Users/jeandredevilliers/Desktop/FlikTerm4/pages/home-page.html"
 } else{
   $(".validator").text("Your password does not match this profile... ");
 }
