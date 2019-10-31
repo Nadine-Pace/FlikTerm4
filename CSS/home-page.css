@@ -1,6 +1,11 @@
   /* general styling and stripping*/
 
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -448,6 +453,7 @@ h3 {
 .see-more {
     opacity: 0.4;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .see-more:hover {
@@ -457,12 +463,13 @@ h3 {
 }
 
 .recommended-row {
-    min-height: 47vh;
+    height: auto;
 }
 
 .see-less {
     opacity: 0.4;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .see-less:hover {
@@ -564,7 +571,7 @@ a:hover, a:visited, a:link, a:active
 
 .flip-card {
     background-color: rgba(255,255,255,0.3);
-    height: 470px;
+    height: 430px;
     perspective: 1000px;
     color: white;
 }
@@ -672,7 +679,45 @@ a:hover, a:visited, a:link, a:active
 
 
 
+    /*movie of the week*/
+.background-image {
+    max-width: 100%;
+    height: 30vh;
+    
+    background-image: url(../img/Headers/MovieOfWeek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-desktop {
+    max-width: 100%;
+    height: auto;
+    
+    background-image: url(../img/Headers/MovieOfWeek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+}
+
+.weekly-deets {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.new-sign {
+    max-width: 5%;
+    margin-left: 49%;
+}
+
+
+
+
     /* team section */
+
 .member-block {
     height: auto;
     padding: 10px;
@@ -681,6 +726,7 @@ a:hover, a:visited, a:link, a:active
 .member-details {
     width: 90%;
     margin-left: 5%;
+    
     
     border-color: rgba(255,255,255,0.3);
     border-style: solid;
@@ -691,18 +737,22 @@ a:hover, a:visited, a:link, a:active
 }
 
 .member-name {
-    margin-top: 25%;
+    margin-top: 50%;
     text-transform: uppercase;
 }
 
 .member-number {
-    letter-spacing : 5px;
+    letter-spacing: 5px;
     margin-bottom: 10px;
 }
 
 .member-photo img {
     max-width: 80%;
-    margin-left: 8%;
+    margin-left: 14%;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 300px;
 }
 
 
