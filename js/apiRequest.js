@@ -4,16 +4,20 @@ $(function () {
  
         var mTitle = $(this).parent(".movie-card").find(".splash-row-one > h3").text();
         
-        localStorage.setItem('transferMovie', mTitle);   
+        localStorage.setItem('transferMovie', mTitle);
+        
+        console.log(mTitle);
         
         
     });
     
      $(document).on('click', ' a > .flip-details', function() {
  
-        var mTitle = $(this).parent().find("h2").text();
+        var mTitle = $(this).parent(".flip-card").find(".flip-card-inner > .flip-card-back > .movie-card > .splash-info > .splash-row-one >.movie-title").text();
         
-        localStorage.setItem('transferMovie', mTitle);        
+        localStorage.setItem('transferMovie', mTitle);
+         
+         console.log(mTitle);
         
     });
     
