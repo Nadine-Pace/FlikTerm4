@@ -35,8 +35,45 @@ $(function(){
     
     
     
+    //welcome & user icon
     
     
+    $("#image-1").click(function() {
+       
+        console.log("it clicks");
+        
+        var loggedUser = $(this).parent(".user-icon-sam").find(".sam").text();
+        
+        localStorage.setItem('loggedUser', loggedUser);
+        
+        
+        var homeUser = localStorage.getItem("loggedUser");
+        
+        console.log(homeUser + "home user working");
+        
+        $("#welcome-message").text(homeUser);
+        
+        console.log(loggedUser);
+        
+        
+        
+        
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //api call
         var apiCall = 'http://www.omdbapi.com/?t=First+Man&apikey=d90cffd6'
     
         $.getJSON(apiCall, filmCallBack);
