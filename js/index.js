@@ -19,38 +19,55 @@ $(document).ready(function(){
 });
 
 
+
 /* Validation */
 
 
-$(document).ready(function(){
-$("#submit-btn").click(function(){
-  var password = $('#password1').validate();
+$("#sign-in-btn").on("click", function(){
 
-  $(".error").remove();
+var password  = +$(this).find("#password1").text();
 
-  if (password.length < 8){
-    $('#password1').after('<span class="error">Password must be at least 8 characters long</span>');
-  }
-});
+if (password === "")
+  alert ("Please enter Password")
 
+  else if (password1 === "12SAM34") { 
+alert ("Password did not match: Please try again...") 
+return false; 
+} 
 
-/* Local Storage */
+else if (password1 === "bob5678") { 
+  alert ("Password did not match: Please try again...") 
+  return false; 
+  } 
 
+  else if (password1 === "jAcK9090") { 
+    alert ("Password did not match: Please try again...") 
+    return false; 
+    } 
 
-$("#sign-in-btn").add("sign-up-btn").on("click", function(){
-var storageRefrence = +$(this).find("#image-1").text();
-console.log(storageRefrence);
-
-for(i =0; i < Data.image.length; i++){
-  if(data.image[i].id === storageRefrence){
-
-
-
-
-  }
-}
-
-});
-
+    else{ 
+      alert("Welcome to FLIK") 
+      return true; 
+      } 
 
 });
+
+
+
+$("#sign-up-btn").on("click", function(){
+
+  var password1 = +$(this).find("#password-01").text();
+  var password2 = +$(this).find("#password-02").text();
+  
+  if (password1 === "")
+    alert ("Please enter Password");
+  
+    else if (password2 == '') 
+    alert ("Please enter confirm password"); 
+  
+      else{ 
+        alert("Welcome to FLIK") 
+        return true; 
+        } 
+  
+  });
