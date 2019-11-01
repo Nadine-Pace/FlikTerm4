@@ -7,17 +7,19 @@ $(function () {
         localStorage.setItem('transferMovie', mTitle);
         
         console.log(mTitle);
-        
-        
     });
     
-     $(document).on('click', ' a > .flip-details', function() {
+    
+    
+    $(document).on('click', ' a > .flip-details', function() {
+        
+        console.log("flip details button clicking"); //working.
  
-        var mTitle = $(this).parent(".flip-card").find(".flip-card-inner > .flip-card-back > .movie-card > .splash-info > .splash-row-one >.movie-title").text();
+        var mTitle = $(this).parent(".flip-card-inner").find("#flik-title").text();
         
         localStorage.setItem('transferMovie', mTitle);
          
-         console.log(mTitle);
+        console.log(mTitle);
         
     });
     
@@ -76,7 +78,7 @@ $(function () {
                     
                     $(".recommended-row").append(
                         
-                         "<div class='flip-card col-lg-2 col-md-3 col-6' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.Poster + "></div><div class='splash-info'><div class='splash-row-one'><h3 class='movie-title' id='flik-title'>" + movie.Title + "</h3></div><p class='show-genre'>" + "flikGenre" + movie.Genre + "</p><div class='movie-time d-none d-lg-block'><img src='../img/UI/Clock.svg'><p class='show-time'>" + movie.Runtime + "</p></div></div></div></div><div class='flip-card-back'><h2>" + movie.Title + "</h2><p>RUNTIME:</p><h5>" + movie.Runtime + "</h5><p>DIRECTOR:</p><h5>" + movie.Director + "</h><p>RELEASE DATE:</p><h5>" + movie.Released + "</h5><p>GENRE</p><h5>" + movie.Genre + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>");
+                         "<div class='flip-card col-lg-2 col-md-3 col-6' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.Poster + "></div><div class='splash-info'><h3 class='movie-title' id='flik-title'>" + movie.Title + "</h3><p class='show-genre'>" + "flikGenre" + movie.Genre + "</p><div class='movie-time d-none d-lg-block'><img src='../img/UI/Clock.svg'><p class='show-time'>" + movie.Runtime + "</p></div></div></div></div><div class='flip-card-back'><h2>" + movie.Title + "</h2><p>RUNTIME:</p><h5>" + movie.Runtime + "</h5><p>DIRECTOR:</p><h5>" + movie.Director + "</h><p>RELEASE DATE:</p><h5>" + movie.Released + "</h5><p>GENRE</p><h5>" + movie.Genre + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>");
                     
                     
                     $(".movie-row").append (
