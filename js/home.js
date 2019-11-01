@@ -29,27 +29,55 @@ $(function(){
     });
     
     
+
     
     
-    //see more button - on click
     
-    $(".see-less").hide();
     
-    $(".see-more").click(function() {
-        $(".see-more").hide();
-        $(".see-less").show();
-        $(".recommended-row").animate({height: '80vh'}, 500);
+    
+    //welcome & user icon
+    
+    
+    $("#image-1").click(function() {
+       
+        console.log("it clicks");
+        
+        var loggedUser = $(this).parent(".user-icon-sam").find(".sam").text();
+        
+        localStorage.setItem("loggedUser", loggedUser);
+        
+        
+        var homeUser = localStorage.getItem("loggedUser");
+        
+        
+        
+        console.log(homeUser + "home user working");
+        
+        
+        
+        console.log(loggedUser);
+        
+        
+        document.getElementById("#welcome-message").text(loggedUser);
+        
+        
+        
+        
     });
     
-    $(".see-less").click(function() {
-        $(".see-less").hide();
-        $(".see-more").show();
-        $(".recommended-row").animate({height: '40vh'}, 500);
-    });
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    //api call
         var apiCall = 'http://www.omdbapi.com/?t=First+Man&apikey=d90cffd6'
     
         $.getJSON(apiCall, filmCallBack);
@@ -88,6 +116,15 @@ $(function(){
           
     
 });
+
+
+
+
+var importMovie = localStorage.getItem("transferMovie");
+
+// Run API withg variable as search 
+
+// s
 
 
 

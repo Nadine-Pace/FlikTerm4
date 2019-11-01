@@ -25,36 +25,15 @@
     <link rel="stylesheet" href="../CSS/home-page.css">
     
     <!--j-query links-->
+    
+    
+
     <script src="../js/home.js"></script>
     <script src="../js/apiRequest.js"></script>
-    
-    <script>
-        function workDammit(){
-            console.log("WORKIN");
-            
-            
-            $(".flip-details").on("click", function() {
-     
-               console.log("CLICK");
-
-                var storageReference = $(this).find(".flik-title").text();
-                console.log(storageReference);
-
-                    for(i = 0; i < data.Search.length; i ++){
-
-                        if(data.Search[i].id === storageReference) {
-
-                            console.log("it works")
-
-                        }
-                    }   
-            })
-    </script>
 
 </head>
 
 <body>
-    
     <div class="container-fluid">
         
         
@@ -100,7 +79,7 @@
         
         <div class="row header-spacer">
             <div class="col-lg-12">
-                <h3 class="welcome-message"></h3>
+                <h3 class="welcome-message" id="welcome-message"></h3>
             </div>
         </div> <!-- header-spacer-->
         
@@ -588,6 +567,9 @@
                 
     
     </div><!--bs main container-fluid-->
+    
+    
+    
 
 
 </body>
