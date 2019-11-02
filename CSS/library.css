@@ -357,6 +357,39 @@ a:hover, a:visited, a:link, a:active
     color: white;
 }
 
+.library-heading h1{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    padding: 32%;
+
+}
+
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #e95a44;
+		color:#fff;
+	}
+ 
+.filters{
+    margin: 15% 12%;
+}
 
 
 
@@ -415,5 +448,7 @@ a:hover, a:visited, a:link, a:active
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
+
 
 

@@ -36,13 +36,13 @@
 
 
 <body>
-    
+
     <div class="container-fluid">
-    
-  
- <!--navigation & spacer bar -->
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid" id="top">
+
+
+        <!--navigation & spacer bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid" id="top">
             <a class="navbar-brand" href="#">
                 <h1>Flik</h1>
             </a>
@@ -58,7 +58,7 @@
                             <p>HOME</p>
                         </a>
                     </li>
-                    
+
                     <li class="nav-item active">
                         <a class="nav-link" href="library.html">
                             <p>LIBRARY</p>
@@ -73,126 +73,98 @@
                 </ul>
 
             </div>
-        </nav>   
-    
-    
-    <div class="row header-spacer" style="background-color: crimson; height: 1vh;">
-        <div class="col-lg-12">
-            <h3 class="welcome-message"></h3>
-        </div>
-    </div> <!-- header-spacer-->
+        </nav>
 
-        
-        
-        
-        
-        
-<!--content-->
-    <div class="row" style="background-color: aqua;">
-        <div class="content-container" id="content-container">
-            <div class="library-heading">
-                <h1>OUR LIBRARY</h1>
-                <div class="heading-underline"></div>
+
+        <div class="row header-spacer" style="background-color: crimson; height: 1vh;">
+            <div class="col-lg-12">
+                <h3 class="welcome-message"></h3>
+            </div>
+        </div> <!-- header-spacer-->
+
+
+
+
+
+
+        <!--content-->
+        <div class="row">
+            <div class="content-container" id="content-container">
+                <div class="library-heading">
+                    <h1>OUR LIBRARY</h1>
+                    <div class="heading-underline"></div>
+                </div>
             </div>
         </div>
-    </div> 
 
+        <!--library-heading-->
 
-
-        
-        
-    <!--library-heading-->
-
-    <!-- <div class="row"></div>
+        <!-- <div class="row"></div>
         <div class="filter-by">
             <p>Filter by...</p>
         </div> -->
 
-
-
-
-    <!--filter-by-->
-
-    <div class="library-filter-movies row col-xs-3">
-        <h3 id="movieTitle">
-            <span></span>
-        </h3>
-        <p id="movieRuntime"> 
-            <span></span>
-        </p>
-        <p id="movieDirector">
-            <span></span>
-        </p>
-        <p id="movieReleaseDate">
-            <span></span>
-        </p>
-        <p id="movieGenre">
-            <span></span>
-        </p>
-    </div>
-
-
-
-<!---movie-rows-->
-    <div class="row movies-row" style="background-color: #072446">
-    
-    
-    </div>
-
-
-
-
-
-
-
-
-
-<!--footer-->
-
-    <div class="row footer-spacer"></div>
-
-    <div class="row footer-row">
-
-
-        <div class="footer-logo col-lg-4 d-none d-lg-block">
-            <a href="home-page.html">
-                <img src="../img/Logo&SocialMedia/FooterLogo.svg">
-            </a>
+        <!--filter-by-->
+        <div class="container-fluid">
+            <div class="row filter-tags">
+                <ul id="filters" class="filters">
+                    <li><span class="filter active" data-filter=".title, .year, .genre">All</span></li>
+                    <li><span class="filter" data-filter=".title">TITLE</span></li>
+                    <li><span class="filter" data-filter=".year">CARD</span></li>
+                    <li><span class="filter" data-filter=".genre">ICON</span></li>
+                </ul>
+            </div>
         </div>
-        <!--footer-logo-->
+
+        <!---movie-rows-->
+        <div class="row movies-row" style="background-color: #072446"></div>
+
+        <!--footer-->
+
+        <div class="row footer-spacer"></div>
+
+        <div class="row footer-row">
 
 
-        <div class="footer-blurb col-lg-4 col-md-">
-            <p class="thats-it">That's it, folks.</p>
-            <p class="footer-copyright">COPYRIGHT | TERM 4 PROJECT</p>
-        </div>
-        <!--footer-blurb -->
+            <div class="footer-logo col-lg-4 d-none d-lg-block">
+                <a href="home-page.html">
+                    <img src="../img/Logo&SocialMedia/HeaderLogo.png">
+                </a>
+            </div>
+            <!--footer-logo-->
 
-        <div class="social-media col-lg-4">
 
-            <div class="col-4"></div>
+            <div class="footer-blurb col-lg-4 col-md-">
+                <p class="thats-it">That's it, folks.</p>
+                <p class="footer-copyright">COPYRIGHT | TERM 4 PROJECT</p>
+            </div>
+            <!--footer-blurb -->
 
-            <a href="https://www.instagram.com/">
-                <img class="col-2 offset-3 social-icon " src="../img/Logo&SocialMedia/Instagram.svg">
-            </a>
+            <div class="social-media col-lg-4">
 
-            <a href="https://www.facebook.com/">
-                <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Facebook.svg">
-            </a>
+                <div class="col-4"></div>
 
-            <a href="https://twitter.com/login?lang=en">
-                <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Twitter.svg">
-            </a>
+                <a href="https://www.instagram.com/">
+                    <img class="col-2 offset-3 social-icon " src="../img/Logo&SocialMedia/Instagram.svg">
+                </a>
+
+                <a href="https://www.facebook.com/">
+                    <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Facebook.svg">
+                </a>
+
+                <a href="https://twitter.com/login?lang=en">
+                    <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Twitter.svg">
+                </a>
+
+            </div>
+            <!--social-media -->
+
 
         </div>
-        <!--social-media -->
+        <!--row footer-row -->
+
+
 
 
     </div>
-    <!--row footer-row -->
-
-
-        
-
-        </div>
 </body>
