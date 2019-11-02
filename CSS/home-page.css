@@ -139,15 +139,6 @@ h3 {
 .bg-dark{
         background-color: #072446!important;
     }    
-    
-.spacer-line  .line{
-        background-color: crimson;
-        min-height: 1vh;
-        height: auto;
-        width: 102%;
-        margin-left: -1%;
-        border: none;
-    }
 
 .nav-item {
     text-align: right;
@@ -536,7 +527,6 @@ h3 {
     float: left;
     color: white;
     font-size: 13px;
-    margin-top: -3%;
 }
 
 .mobile-btn {
