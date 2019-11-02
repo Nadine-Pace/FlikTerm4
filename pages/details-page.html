@@ -79,11 +79,11 @@
         
         
         <div class="row title-row justify-content-center" style="margin-top: 5vh;">
-            <h1 class="title">MOVIE TITLE</h1>
+            <h1 class="title" id="movieTitle"></h1>
         </div> <!--title-row-->
         
         <div class="row runtime-row justify-content-center" style="margin-top: 1vh;">
-            <p>RUNTIME:<span></span></p>
+            <p>RUNTIME: <span id="movieRuntime"></span></p>
         </div><!--runtime-row-->
         
         
@@ -96,64 +96,45 @@
         <div class="row cool-row" style="margin-top: 5vh;">
             
             <div class="col-12 col-md-6 col-lg-4 align-self-center" style="margin-top: 5vh;">
-                <div class="movie-poster"></div>
-                <img src="" class="img-fluid"  style="max-width: 100%; and height: auto;">
+                <img id="moviePoster" src="" class="img-fluid"  style="max-width: 100%; height: auto;">
             </div>
             
             <div class="movie-details col-lg-4 col-md-6 col-12" style="margin-bottom: 10vh;">
                 
                 <img src="../img/DetailsIcons/pgwarning.svg" class="icon">
-                <h5 class="heading pg-rating">RATING:</h5>
-                <p class="info">Pg yo mama</p>
+                <h5 class="heading pg-rating">RATED:</h5>
+                <p class="info" id="movieRating"></p>
                 
                 <img src="../img/DetailsIcons/directorIcon.svg" class="icon">
                 <h5 class="heading director">DIRECTOR:</h5>
-                <p class="info">Paris Hilton</p>
+                <p class="info" id="movieDirector"></p>
                 
                 <img src="../img/DetailsIcons/releaseDateIcon.svg" class="icon">
                 <h5 class="heading release-date">RELEASE DATE:</h5>
-                <p class="info">2000 BC</p>
+                <p class="info" id="movieReleaseDate"></p>
                 
                 <img src="../img/DetailsIcons/genreIcon.svg" class="icon">
                 <h5 class="heading genre">GENRE:</h5>
-                <p class="info">Ramance, Hooroor</p>
+                <p class="info" id="movieGenre"></p>
                 
                 <img src="../img/DetailsIcons/starringIcon.svg" class="icon">
                 <h5 class="heading starring">STARRING:</h5>
-                <span>Megan Foxy, George Clowney and Robert Dewey Down</span>
+                <span id="movieActors"></span>
                 
             </div> <!--movie-details-->
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             <div class="ratings col-lg-4 d-none d-lg-block" style="margin-top: 10vh;">
                 
                 <div class="ratings-box">
                     <img src="../img/DetailsIcons/ratingsIcon.svg">
-
-                    <h5 class="heading imbd">IMBD:</h5>
-                    <span class="info">6/170</span>
-
-                    <h5 class="heading rotten-tomatoes">Rotten Tomatoes:</h5>
-                    <span class="info">46/10</span>
-
-                    <h5 class="heading metacritic">Metacritic:</h5>
-                    <span class="info">12/5</span>
                 </div><!--ratings-box-->    
                 
                 <div class="extras-box">
                    <h5 class="heading language">LANGUAGE:</h5>
-                   <span class="info">English</span>
+                   <span class="info" id="movieLanguage"></span>
                 
-                   <h5 class="heading studio">STUDIO:</h5>
-                   <span class="info">Universal</span>
+                   <h5 class="heading studio">PRODUCTION:</h5>
+                   <span class="info" id="movieProduction"></span>
                 </div><!--ratings-box-->
                 
             </div> <!--ratings-->
@@ -177,7 +158,7 @@
                 
                 <div class="description-text">
                     <h2>DESCRIPTION</h2>
-                    <p>blah, blah, blah</p>
+                    <p id="moviePlot"></p>
                 </div><!--description-text-->  
             
             </div><!--description-col-->
@@ -190,7 +171,7 @@
                 
                 <div class="awards-text">
                     <h2>AWARDS</h2>
-                    <p>blah, blah, blah</p>
+                    <p id="movieAwards"></p>
                 </div><!--description-text-->  
             
             </div><!--awards-col-->

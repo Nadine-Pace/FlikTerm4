@@ -1,25 +1,38 @@
-$(function(){
+$(function () {
 
-    var apiCall = 'http://www.omdbapi.com/?i=tt3896198&apikey=d90cffd6';
+    var movieId = localStorage.getItem("detailMovieID");
 
-    $.getJSON (apiCall, filmCallBack);
+    if (movieId) {
+        var url = 'http://www.omdbapi.com/?apikey=d90cffd6&i=' + movieId;
+        var apiRequest = new XMLHttpRequest();
 
-    function filmCallBack(filmData){
-        console.log(filmData);
+        apiRequest.open('GET', url, true);
+        apiRequest.send();
+        apiRequest.onload = function () {
+            var movie = JSON.parse(this.response);
+
+            $("#moviePoster").attr('src', movie.Poster);
+            $("#movieTitle").text(movie.Title);
+            $("#movieDirector").text(movie.Director);
+            $("#movieGenre").text(movie.Genre);
+            $("#movieRuntime").text(movie.Runtime);
+            $("#movieRating").text(movie.Rated);
+            $("#movieReleaseDate").text(movie.Released);
+            $("#movieActors").text(movie.Actors);
+            $("#movieLanguage").text(movie.Language);
+            $("#movieProduction").text(movie.Production);
+            $("#moviePlot").text(movie.Plot);
+            $("#movieAwards").text(movie.Awards);
+
+            if (movie.Ratings) {
+
+                movie.Ratings.forEach(element => {
+                    $(".ratings-box").append("<h5 class='heading imbd'>" + element.Source + "</h5> <span class='info'>" + element.Value + "</span>");
+                });
+            }
+            
+        }
+
     }
-    
-    var moviePoster = localStorage.getItem("moviePoster");
-    var movieTitle = localStorage.getItem("movieTitle");
-    var movieDirector = localStorage.getItem("movieDirector");
-    var movieGenre = localStorage.getItem("movieGenre");
-    var movieRuntime = localStorage.getItem("movieRuntime");
-    
-    $("#moviePoster").attr('src', moviePoster);
-    $("#movieTitle").text(movieTitle);
-    $("#movieDirector").text(movieDirector);
-    $("#movieGenre").text(movieGenre);
-    $("#movieRuntime").text(movieRuntime);
-
-
 });
 
