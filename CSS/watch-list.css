@@ -210,7 +210,11 @@ h6 {
 
 .textbox {
     height: 300px;
+<<<<<<< HEAD
     width:40%;
+=======
+    width:55%;
+>>>>>>> ca3398d42d5ae8083f283b6f61fb8e81a70bd738
     width:50%;
     float: right;
     background-color: white;

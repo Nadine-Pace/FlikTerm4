@@ -101,7 +101,8 @@ h3 {
 
     /* navigation bar & spacer */
 
-.navbar {
+    .navbar {
+
         margin-bottom: 0;
         border-radius: 0;
         padding: 1% 0;
@@ -110,6 +111,7 @@ h3 {
         border: 0;
         height: auto;
     }
+    
 
 .navbar-brand{
         float: left;
@@ -122,7 +124,7 @@ h3 {
         font-family:'Pacifico', cursive;
     }
     
-#navbarContent p{
+#navbarContent p {
         font-family: 'Montserrat', sans-serif;
         padding: 0% 6%;
     }
@@ -145,6 +147,11 @@ h3 {
     margin-right: -5%;
     
     margin-left: 5%;
+}
+
+
+.tablet-image {
+    margin-bottom: 1vh;
 }
 
 .header-spacer {
