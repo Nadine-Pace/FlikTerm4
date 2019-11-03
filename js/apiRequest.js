@@ -85,8 +85,8 @@ function getMovies(keyword, type, year, page) {
                             var movieInfo = JSON.parse(this.response);
                             movieMap.set(movieInfo.imdbID, movieInfo);
 
-                            buildHtml(movieInfo, ".movies-row", false);
-                            buildHtml(movieInfo, ".recommended-row", false);
+                            buildHtml(movieInfo, ".movies-row");
+                            buildHtml(movieInfo, ".recommended-row");
                         }
                     }
                 }

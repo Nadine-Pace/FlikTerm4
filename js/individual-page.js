@@ -34,5 +34,29 @@ $(function () {
         }
 
     }
+
+    $(document).on('click', '.watchlist-btn-details', function () {
+        var watchlist = JSON.parse(localStorage.getItem("watchList"));
+        var movieInfo = movieMap.get(movieId);
+
+        if (!watchlist) {
+            watchlist = JSON.stringify([{ movieInfo }]);
+            localStorage.setItem("watchList", watchlist);
+        } else {
+            var movieExists = watchlist.find((movie) => {
+
+                if (movie.movieInfo) {
+                    return movie.movieInfo.imdbID === movieId;
+                }
+            });
+            
+            if (!movieExists) {
+                watchlist = JSON.stringify([...watchlist, { movieInfo }]);
+                localStorage.setItem("watchList", watchlist);
+            } else {
+                alert("Movie already exists on watchlist.");
+            }
+        }
+    });
 });
 
