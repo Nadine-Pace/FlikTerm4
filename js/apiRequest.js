@@ -20,19 +20,24 @@ $(function () {
             localStorage.setItem("watchList", watchlist);
         } else {
             var movieExists = watchlist.find((movie) => {
-                return movie.movieInfo.imdbID === movieID;
-            });
 
+                if (movie.movieInfo) {
+                    return movie.movieInfo.imdbID === movieID;
+                }
+            });
+            
             if (!movieExists) {
                 watchlist = JSON.stringify([...watchlist, { movieInfo }]);
                 localStorage.setItem("watchList", watchlist);
+            } else {
+                alert("Movie already exists on watchlist.");
             }
         }
     });
 
     getMovies('Man', 'movie', null, '1');
     getMovies('Time', 'movie', null, '1');
-    
+
 });
 
 function getMovies(keyword, type, year, page) {
@@ -60,34 +65,34 @@ function getMovies(keyword, type, year, page) {
         apiRequest.open('GET', url, true);
         apiRequest.send();
         apiRequest.onload = function () {
-            
+
             var data = JSON.parse(this.response);
             movieMap = new Map();
 
-        if (data.Search){
+            if (data.Search) {
 
-            for (var i = 1; i < data.Search.length; i++) {
-                
-                var movie = data.Search[i];
+                for (var i = 1; i < data.Search.length; i++) {
 
-                if (movie.imdbID) {
-                    var url = 'http://www.omdbapi.com/?apikey=d90cffd6&i=' + movie.imdbID;
-                    var apiRequest = new XMLHttpRequest();
+                    var movie = data.Search[i];
 
-                    apiRequest.open('GET', url, true);
-                    apiRequest.send();
-                    apiRequest.onload = function () {
-                        var movieInfo = JSON.parse(this.response);
-                        movieMap.set(movieInfo.imdbID, movieInfo);
+                    if (movie.imdbID) {
+                        var url = 'http://www.omdbapi.com/?apikey=d90cffd6&i=' + movie.imdbID;
+                        var apiRequest = new XMLHttpRequest();
 
-                        buildHtml(movieInfo, ".movies-row", false);
-                        buildHtml(movieInfo, ".recommended-row", false);
+                        apiRequest.open('GET', url, true);
+                        apiRequest.send();
+                        apiRequest.onload = function () {
+                            var movieInfo = JSON.parse(this.response);
+                            movieMap.set(movieInfo.imdbID, movieInfo);
+
+                            buildHtml(movieInfo, ".movies-row", false);
+                            buildHtml(movieInfo, ".recommended-row", false);
+                        }
                     }
                 }
             }
         }
     }
-}
 }
 
 function buildHtml(movieInfo, parent) {
