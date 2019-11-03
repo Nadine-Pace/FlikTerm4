@@ -52,10 +52,9 @@ h3 {
 
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     padding-top: 10px;
-    text-align: center;
 }
 
 h5 {
@@ -99,11 +98,12 @@ h6 {
 }
 
 
-
+<<<<<<< HEAD
 
 
     /* navigation bar & spacer */
-
+=======
+>>>>>>> 7174452a44980294d290ac8250500a22beb2ff30
 
 
 
@@ -168,6 +168,8 @@ h6 {
 
 
 
+
+
 .content {
     width: 100%;
     height: 160vh;
@@ -196,25 +198,31 @@ h6 {
 .filmbox {
     width: 100%;
     height: 300px;
+<<<<<<< HEAD
+=======
+    margin: 3% 10%;
+>>>>>>> 7174452a44980294d290ac8250500a22beb2ff30
 }
 
 
 .picturebox {
     height: 300px;
-    width:50%;
+    width:200px;
     float: left;
-    background-color: orangered;
 }
-
-
 
 .textbox {
     height: 300px;
-    width:40%;
+    width:55%;
+<<<<<<< HEAD
     width:50%;
+=======
+>>>>>>> 7174452a44980294d290ac8250500a22beb2ff30
     float: right;
     background-color: white;
-}
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+  }
 
 .picturebox img {
     height: 100%;
@@ -287,7 +295,6 @@ h6 {
 .hheadings {
     padding-top: 20px;
 }
-
 
 
 
