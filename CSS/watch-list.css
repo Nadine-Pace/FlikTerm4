@@ -198,10 +198,6 @@ h6 {
 .filmbox {
     width: 100%;
     height: 300px;
-<<<<<<< HEAD
-=======
-    margin: 3% 10%;
->>>>>>> 7174452a44980294d290ac8250500a22beb2ff30
 }
 
 
@@ -214,10 +210,7 @@ h6 {
 .textbox {
     height: 300px;
     width:55%;
-<<<<<<< HEAD
     width:50%;
-=======
->>>>>>> 7174452a44980294d290ac8250500a22beb2ff30
     float: right;
     background-color: white;
     border-bottom-right-radius: 7px;

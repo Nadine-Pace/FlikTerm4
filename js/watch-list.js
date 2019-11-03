@@ -34,20 +34,8 @@ $(function () {
     }
                 
                 
-            });
+           
             
-    
-            
-        // create title cards that show the movies using above variables
-        
-        
-   }
-        
-        
-        
-    }
-
-    // create title cards that show the movies using above variables
 
 
 
