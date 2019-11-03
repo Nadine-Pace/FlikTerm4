@@ -1,30 +1,33 @@
 <!DOCTYPE html>
+
 <head>
     <!-- meta-information -->
-    <meta name="authors" content="Claudia Ferreira 180181, Jeandre De Villiers 190025, Nadine Pace 190043, Pfano Khampha 190068">
+    <meta name="authors"
+        content="Claudia Ferreira 180181, Jeandre De Villiers 190025, Nadine Pace 190043, Pfano Khampha 190068">
     <meta name="assessment" content="Semester Four Project">
     <meta name="subject" content="IDV100">
-    <meta name="lecturer" content ="Mike Maynard">
+    <meta name="lecturer" content="Mike Maynard">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- website-title -->
     <title>Flik - Semester Four Project</title>
-    
+
     <!--bootstrap links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-        
+
+
     <!-- jQuery library files -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-         
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <!-- font imports -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,600,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-        
+
     <!-- CSS-file-links -->
     <link rel="stylesheet" href="../CSS/details-page.css">
-    
+
     <!--j-query links-->
     <script src="../js/individual-page.js"></script>
     <script src="../js/apiRequest.js"></script>
@@ -34,10 +37,10 @@
 
 <body>
     <div class="container-fluid" style="background-color: #072446;">
-        
-        
-<!--navigation & spacer bar -- working -->
-    
+
+
+        <!--navigation & spacer bar -- working -->
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid" id="top">
             <a class="navbar-brand" href="#">
                 <h1>Flik</h1>
@@ -54,7 +57,7 @@
                             <p>HOME</p>
                         </a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link active" href="library.html">
                             <p>LIBRARY</p>
@@ -70,187 +73,196 @@
 
             </div>
         </nav>
-   
-        
+
+
         <div class="header-spacer"></div>
-        
-        
-        
-        
-<!--title & runtime -->     
-        
-        
+
+
+
+
+        <!--title & runtime -->
+
+
         <div class="row title-row justify-content-center" style="margin-top: 5vh;">
             <h1 class="title" id="movieTitle"></h1>
-        </div> <!--title-row-->
-        
+        </div>
+        <!--title-row-->
+
         <div class="row runtime-row justify-content-center" style="margin-top: 1vh;">
             <p>RUNTIME: <span id="movieRuntime"></span></p>
-        </div><!--runtime-row-->
-        
-        
-        
-        
-        
-        
-<!--middle-row-->        
-        
+        </div>
+        <!--runtime-row-->
+
+
+
+
+
+
+        <!--middle-row-->
+
         <div class="row cool-row" style="margin-top: 5vh;">
-            
+
             <div class="col-12 col-md-6 col-lg-4 align-self-center" style="margin-top: 5vh;">
-                <img id="moviePoster" src="" class="img-fluid"  style="max-width: 100%; height: auto;">
+                <img id="moviePoster" src="" class="img-fluid" style="max-width: 100%; height: auto; margin: 0% 23%;">
             </div>
-            
+
             <div class="movie-details col-lg-4 col-md-6 col-12" style="margin-bottom: 10vh;">
-                
+
                 <img src="../img/DetailsIcons/pgwarning.svg" class="icon">
                 <h5 class="heading pg-rating">RATED:</h5>
                 <p class="info" id="movieRating"></p>
-                
+
                 <img src="../img/DetailsIcons/directorIcon.svg" class="icon">
                 <h5 class="heading director">DIRECTOR:</h5>
                 <p class="info" id="movieDirector"></p>
-                
+
                 <img src="../img/DetailsIcons/releaseDateIcon.svg" class="icon">
                 <h5 class="heading release-date">RELEASE DATE:</h5>
                 <p class="info" id="movieReleaseDate"></p>
-                
+
                 <img src="../img/DetailsIcons/genreIcon.svg" class="icon">
                 <h5 class="heading genre">GENRE:</h5>
                 <p class="info" id="movieGenre"></p>
-                
+
                 <img src="../img/DetailsIcons/starringIcon.svg" class="icon">
                 <h5 class="heading starring">STARRING:</h5>
                 <span id="movieActors"></span>
-                
-            </div> <!--movie-details-->
-            
+
+            </div>
+            <!--movie-details-->
+
             <div class="ratings col-lg-4 d-none d-lg-block" style="margin-top: 10vh;">
-                
+
                 <div class="ratings-box">
                     <img src="../img/DetailsIcons/ratingsIcon.svg">
-                </div><!--ratings-box-->    
-                
+                </div>
+                <!--ratings-box-->
+
                 <div class="extras-box">
-                   <h5 class="heading language">LANGUAGE:</h5>
-                   <span class="info" id="movieLanguage"></span>
-                
-                   <h5 class="heading studio">PRODUCTION:</h5>
-                   <span class="info" id="movieProduction"></span>
-                </div><!--ratings-box-->
-                
-            </div> <!--ratings-->
+                    <h5 class="heading language">LANGUAGE:</h5>
+                    <span class="info" id="movieLanguage"></span>
 
-        </div><!--poster & cast-->
-        
-        
-        
-        
+                    <h5 class="heading studio">PRODUCTION:</h5>
+                    <span class="info" id="movieProduction"></span>
+                </div>
+                <!--ratings-box-->
 
-        
-        
-<!--description & awards row -->
-        
-        
+            </div>
+            <!--ratings-->
+
+        </div>
+        <!--poster & cast-->
+
+
+
+
+
+
+
+        <!--description & awards row -->
+
+
         <div class="row" style="margin-top: 5vh; padding-bottom: 5vh; background-color: rgba(255,255,255,0.3);">
-            
+
             <div class="description-col col-lg-8 col-md-6 col-12 text-center">
-                
+
                 <img src="../img/DetailsIcons/descriptionIcon.svg" class="bottom-icon">
-                
+
                 <div class="description-text">
                     <h2>DESCRIPTION</h2>
                     <p id="moviePlot"></p>
-                </div><!--description-text-->  
-            
-            </div><!--description-col-->
-            
-            
-            
+                </div>
+                <!--description-text-->
+
+            </div>
+            <!--description-col-->
+
+
+
             <div class="awards-col col-lg-4 col-md-6 col-12 text-center d-none d-lg-block d-md-block">
-                
+
                 <img src="../img/DetailsIcons/awardIcon.svg" class="bottom-icon">
-                
+
                 <div class="awards-text">
                     <h2>AWARDS</h2>
                     <p id="movieAwards"></p>
-                </div><!--description-text-->  
-            
-            </div><!--awards-col-->
-            
-        </div> <!--chunk-of-text-->
-    
-        
-        
-        
-        
-        
-<!--add to watchlist btn-->
-        
+                </div>
+                <!--description-text-->
+
+            </div>
+            <!--awards-col-->
+
+        </div>
+        <!--chunk-of-text-->
+
+
+
+
+
+
+        <!--add to watchlist btn-->
+
         <div class="row text-center">
-            
+
             <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-5 offset-3">
                 <a href="watch-list.html">
                     <div class="watchlist-btn-details">
                         <h5>ADD TO WATCHLIST</h5>
                     </div>
-                </a> <!--watchlist-btn -->
-            </div><!--buttons-row-->
-            
-                
-        </div><!--watchlist btn row-->
-        
-        
-        
-        
-        
-        
-<!--footer-->      
-        
+                </a>
+                <!--watchlist-btn -->
+            </div>
+            <!--buttons-row-->
+
+
+        </div>
+        <!--watchlist btn row-->
+
+
+
+
+
+
+        <!--footer-->
+
         <div class="row footer-spacer"></div>
-        
+
         <div class="row footer-row">
-            
-            
+
+
             <div class="footer-logo col-lg-4 d-none d-lg-block">
                 <a href="home-page.html">
                     <img src="../img/Logo&SocialMedia/HeaderLogo.png">
                 </a>
-            </div><!--footer-logo-->
-            
-            
+            </div>
+            <!--footer-logo-->
+
+
             <div class="footer-blurb col-lg-4 col-md-">
                 <p class="thats-it">That's it, folks.</p>
                 <p class="footer-copyright">COPYRIGHT | TERM 4 PROJECT</p>
-            </div><!--footer-blurb -->
-            
+            </div>
+            <!--footer-blurb -->
+
             <div class="social-media col-lg-4">
-                
+
                 <div class="col-4"></div>
-                
+
                 <a href="https://www.instagram.com/">
                     <img class="col-2 offset-3 social-icon " src="../img/Logo&SocialMedia/Instagram.svg">
                 </a>
-                    
+
                 <a href="https://www.facebook.com/">
-                    <img class="col-2 social-icon"  src="../img/Logo&SocialMedia/Facebook.svg">
-                </a>    
-                    
-                <a href="https://twitter.com/login?lang=en">
-                    <img class="col-2 social-icon"  src="../img/Logo&SocialMedia/Twitter.svg">
+                    <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Facebook.svg">
                 </a>
-                
-            </div> <!--social-media -->
-        
-        
-        </div><!--row footer-row --> 
-        
-        
-        
-        
-        
-        
-        
-        
-    </div> <!--container-fluid-->
+
+                <a href="https://twitter.com/login?lang=en">
+                    <img class="col-2 social-icon" src="../img/Logo&SocialMedia/Twitter.svg">
+                </a>
+            </div>
+            <!--social-media -->
+        </div>
+        <!--row footer-row -->
+    </div>
+    <!--container-fluid-->
 </body>
