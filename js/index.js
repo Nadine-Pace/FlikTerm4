@@ -21,19 +21,19 @@ $(document).on("click", "#sign-in-btn", function(){
 var password  = $(this).parent(".mainParent").find("input").val();
 console.log(password);
 
-var registeredPassewords = ["samcoolcat", "jack123", "bobbyboy"]
+var registeredPasswords = ["samcoolcat", "jack", "bobbyboy"]
 
 if(password === ""){
   $(".validator").text("While FLIK! You're missing something...");
-} else if(password === registeredPassewords[0]){
+} else if(password === registeredPasswords[0]){
   localStorage.setItem("activeUser", "SAM");
-  location.href = "file:///C:/Users/leadi/Desktop/Flik/FlikTerm4/pages/home-page.html"
-} else if(password === registeredPassewords[1]){
+  location.href = "http://nadine.pale.co.za/FlikTerm4/"
+} else if(password === registeredPasswords[1]){
   localStorage.setItem("activeUser", "JACK");
-  location.href = "file:///C:/Users/leadi/Desktop/Flik/FlikTerm4/pages/home-page.html"
-}else if(password === registeredPassewords[2]){
+  location.href = "http://nadine.pale.co.za/FlikTerm4/"
+}else if(password === registeredPasswords[2]){
   localStorage.setItem("activeUser", "BOBBY");
-  location.href ="file:///C:/Users/leadi/Desktop/Flik/FlikTerm4/pages/home-page.html"
+  location.href ="http://nadine.pale.co.za/FlikTerm4/"
 } else{
   $(".validator").text("Your password does not match this profile... ");
 }
