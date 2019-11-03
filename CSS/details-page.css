@@ -101,44 +101,55 @@ h3 {
 
     /* navigation bar & spacer */
 
-.navigation-bar {
-    background-color: #072446!important;
-    font-size: 1.2em;
-    height: auto;
-    width: 100%;
-    padding: 0; 
-    margin: 0;
-}
-
-.header-logo{
-    float: left;
-    padding-left: 2%;
-    color: #fff;
-    font-size: 30pt;
-    font-family:'Pacifico', cursive;
-    
-    padding-top: 1%;
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 1% 0;
+        background-color:#072446;
+        font-size: 1.2em;
+        border: 0;
+        height: auto;
     }
 
+.navbar-brand{
+        float: left;
+        padding: 0px 15px 5px;
+        color: #fff;
+    }
+
+.navbar-brand h1{
+        font-size: 30pt;
+        font-family:'Pacifico', cursive;
+    }
     
-#navbarContent p{
+#navbarContent p {
         font-family: 'Montserrat', sans-serif;
         padding: 0% 6%;
     }
 
-.header-spacer {
-    background-color: crimson;
-    min-height: 1vh;
-    height: auto;
-}
-
-.tablet-image {
-    margin-bottom: 1vh;
-}
+.bg-dark{
+        background-color: #072446!important;
+    }    
+    
+.spacer-line  .line{
+        background-color: crimson;
+        min-height: 1vh;
+        height: auto;
+        width: 102%;
+        margin-left: -1%;
+        border: none;
+    }
 
 .nav-item {
     text-align: right;
     margin-right: -5%;
+    
+    margin-left: 5%;
+}
+
+
+.tablet-image {
+    margin-bottom: 1vh;
 }
 
 
