@@ -32,6 +32,7 @@ $(function () {
 
     getMovies('Man', 'movie', null, '1');
     getMovies('Time', 'movie', null, '1');
+    
 });
 
 function getMovies(keyword, type, year, page) {
@@ -59,12 +60,14 @@ function getMovies(keyword, type, year, page) {
         apiRequest.open('GET', url, true);
         apiRequest.send();
         apiRequest.onload = function () {
+            
             var data = JSON.parse(this.response);
             movieMap = new Map();
 
         if (data.Search){
 
             for (var i = 1; i < data.Search.length; i++) {
+                
                 var movie = data.Search[i];
 
                 if (movie.imdbID) {

@@ -1,4 +1,3 @@
-
 $(function () {
     $(document).on('click', '.remove-item', function () {
         var flimBox = $(this).parent().parent();
@@ -33,6 +32,20 @@ $(function () {
             );
         });
     }
+                
+                
+            });
+            
+    
+            
+        // create title cards that show the movies using above variables
+        
+        
+   }
+        
+        
+        
+    }
 
     // create title cards that show the movies using above variables
 
@@ -43,54 +56,5 @@ $(function () {
 
    
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
