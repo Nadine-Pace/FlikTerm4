@@ -365,15 +365,13 @@ a:hover, a:visited, a:link, a:active
 }
 
 #filters {
-    margin: 2%;
-    padding: 0;
-    list-style: none;
-    margin-left: 24%;
+	margin:1%;
+	padding:0;
+	list-style:none;
 }
 
 	#filters li {
-        float:left;
-		color:#fff;
+		float:left;
 	}
 	
 	#filters li span {
@@ -381,8 +379,7 @@ a:hover, a:visited, a:link, a:active
 		padding:5px 20px;		
 		text-decoration:none;
 		color:#666;
-        cursor: pointer;
-        color: white;
+		cursor: pointer;
 	}
 	
 	#filters li span.active {
@@ -393,92 +390,12 @@ a:hover, a:visited, a:link, a:active
 .filters{
     margin: 15% 12%;
 }
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  
-input[type=text] {
-    padding: 6px;
-    font-size: 17px;
-    border: none;
-    margin-left: 35%;
-    border-radius: 5px;
-    
-}
-select{
-    padding: 13px;
-    border-radius: 7px;
-}
-.search-row button {
-    float: right;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-.search-row button:hover {
-    background: #ccc;
-}
-.btn-primary{
-    width: 200px;
-    height: 50px;
-}
-.filter-button-container{
-    margin-left: -30%;
-    margin-top: 14%;
-    margin-top: 23%;
 
-}
-button, input {
-    overflow: visible;
-    padding: 10px;
-    border-top-right-radius:7px;
-    border-bottom-right-radius: 7px;
-}
 
-@media (max-width: 640px) {
-    
-}
-@media (min-width:640px) and (max-width: 768px) {
-    
-}
 
-@media (min-width: 768px) and (max-width:992px){
 
-}
 
-@media (min-width: 992px) and (max-width:1200px) {
 
-}
 
 
     /* footer */

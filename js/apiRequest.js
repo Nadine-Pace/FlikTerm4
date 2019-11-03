@@ -16,20 +16,30 @@ $(function () {
         var movieInfo = movieMap.get(movieID);
 
         if (!watchlist) {
-            watchlist = JSON.stringify([{ movieInfo }]);
+            watchlist = JSON.stringify([{ id:movieInfo.imdbID, movieInfo }]);
             localStorage.setItem("watchList", watchlist);
         } else {
-            var movieExists = watchlist.find((movie) => {
-                return movie.movieInfo.imdbID === movieID;
-            });
 
-            if (!movieExists) {
+            if (watchlist.includes(movieInfo)) {
                 watchlist = JSON.stringify([...watchlist, { movieInfo }]);
                 localStorage.setItem("watchList", watchlist);
+            } else {
+                console.log("STOP!!!")
             }
         }
     });
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     getMovies('Man', 'movie', null, '1');
     getMovies('Time', 'movie', null, '1');
     
@@ -62,9 +72,6 @@ function getMovies(keyword, type, year, page) {
         apiRequest.onload = function () {
             
             var data = JSON.parse(this.response);
-            movieMap = new Map();
-
-        if (data.Search){
 
             for (var i = 1; i < data.Search.length; i++) {
                 
@@ -78,65 +85,20 @@ function getMovies(keyword, type, year, page) {
                     apiRequest.send();
                     apiRequest.onload = function () {
                         var movieInfo = JSON.parse(this.response);
-                        movieMap.set(movieInfo.imdbID, movieInfo);
+                        movie.info = movieInfo;
+                        movieMap.set(movie.info.imdbID, movie.info);
 
-                        buildHtml(movieInfo, ".movies-row", false);
-                        buildHtml(movieInfo, ".recommended-row", false);
+                        $(".movies-row").append(
+                            "<div class='flip-card col-lg-2 col-md-3 col-6' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.info.Poster + "></div><div class='splash-info'><div class='splash-row-one'><h3 class='movie-title' id='flik-title'>" + movie.info.Title + "</h3></div><p class='show-genre'>" + movie.info.Genre + "</p><div class='movie-time d-none d-lg-block'><img src='../img/UI/Clock.svg'><p class='show-time'>" + movie.info.Runtime + "</p></div></div></div></div><div class='flip-card-back'><div class='movie-id' style='display: none;'>" + movie.info.imdbID + "</div><h2>" + movie.info.Title + "</h2><p>RUNTIME:</p><h5>" + movie.info.Runtime + "</h5><p>DIRECTOR:</p><h5>" + movie.info.Director + "</h><p>RELEASE DATE:</p><h5>" + movie.info.Released + "</h5><p>GENRE</p><h5>" + movie.info.Genre + "</h5><a href='watchlist.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>");
+                        
+                        $(".recommended-row").append(
+                            "<div class='flip-card col-lg-2 col-md-3 col-6' style='background-color:  #072446;'><div class='flip-card-inner'><div class='flip-card-front'><div class='movie-card' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.info.Poster + "></div><div class='splash-info'><div class='splash-row-one'><h3 class='movie-title' id='flik-title'>" + movie.info.Title + "</h3></div><p class='show-genre'>" + movie.info.Genre + "</p><div class='movie-time d-none d-lg-block'><img src='../img/UI/Clock.svg'><p class='show-time'>" + movie.info.Runtime + "</p></div></div></div></div><div class='flip-card-back'><h2>" + movie.info.Title + "</h2><p>RUNTIME:</p><h5>" + movie.info.Runtime + "</h5><p>DIRECTOR:</p><h5>" + movie.info.Director + "</h><p>RELEASE DATE:</p><h5>" + movie.info.Released + "</h5><p>GENRE</p><h5>" + movie.info.Genre + "</h5><a href='watch-list.html'><div class='flip-watchlist'><p>ADD TO WATCHLIST</p></div></a><a href='details-page.html'><div class='flip-details'><p>VIEW MORE DETAILS</p></div></a></div></div></div>");
+                        
+                        $(".movie-row").append(
+                            "<div class='movie-card col-7 col-md-4' style='background-color:  #072446;'><div class='movie-poster'><img src=" + movie.info.Poster + "></div><div class='splash-info'><div class='splash-row-one'><h3>" + movie.info.Title + "</h3></div><p class='show-genre'>" + movie.info.Genre + "</p><div class='movie-time'></div><p class='show-time'>" + movie.info.Runtime + "</p></div><a href='watch-list.html'><div class='mobile-btn watchlist-btn d-lg-none' style='margin-top: 3vh;'>ADD TO<br>WATCHLIST</div></a><a href='details-page.html'><div class='mobile-btn details-btn d-lg-none'>MORE<br>DETAILS</div></a></div>");
                     }
                 }
             }
         }
-    }
-}
-}
-
-function buildHtml(movieInfo, parent) {
-
-    if (movieInfo && parent) {
-        var html = `<div class="flip-card col-lg-2 col-md-3 col-6" style="background-color:  #072446;">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="movie-card" style="background-color:  #072446;">
-                                <div class="movie-poster">
-                                    <img src="${movieInfo.Poster}">
-                                </div>
-                                <div class="splash-info">
-                                    <div class="splash-row-one">
-                                        <h3 class="movie-title" id="flik-title">${movieInfo.Title}</h3>
-                                    </div>
-                                    <p class="show-genre">${movieInfo.Genre}</p>
-                                    <div class="movie-time d-none d-lg-block">
-                                        <img src="../img/UI/Clock.svg">
-                                        <p class="show-time">${movieInfo.Runtime}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="movie-id" style="display: none;">${movieInfo.imdbID}</div>
-                            <h2>${movieInfo.Title}</h2>
-                            <p>RUNTIME:</p>
-                            <h5>${movieInfo.Runtime}</h5>
-                            <p>DIRECTOR:</p>
-                            <h5>${movieInfo.Director}</h>
-                            <p>RELEASE DATE:</p>
-                            <h5>${movieInfo.Released}</h5>
-                            <p>GENRE</p>
-                            <h5>${movieInfo.Genre}</h5>
-                            <a href="watch-list.html">
-                                <div class="flip-watchlist">
-                                    <p>ADD TO WATCHLIST</p>
-                                </div>
-                            </a>
-                            <a href="details-page.html">
-                                <div class="flip-details">
-                                    <p>VIEW MORE DETAILS</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>`;
-
-        $(parent).append(html);
     }
 }
